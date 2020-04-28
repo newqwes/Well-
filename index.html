@@ -6,7 +6,6 @@
     <title>REFIT.BY</title>
 </head>
 <body>
-
     <header class="header">
         <div class="wrapper wrapper__header-left">
             <img src="img/СТБ-ISO-9001.jpg" alt="знак сертификата">
@@ -15,7 +14,7 @@
             </a>
             <div class="header__call-back">
                 <a href="tel:+375333826040"><span>ico</span>+375 (33) 382-60-40</a><br><span>пн-сб: 10 до 19</span>
-                <button class="button button__call-back">Обратный звонок</button>
+                <button class="button header__button">Обратный звонок</button>
             </div>
         </div>
         <div class="wrapper wrapper__header-right">
@@ -89,6 +88,7 @@
             </div>
         </div>
     </section>
+
     <section class="brand">
         <div class="wrapper">
             <h2>Выберите бренд ноутбука</h2>
@@ -187,11 +187,443 @@
                 <form action method="POST">
                     <input type="text" name="name" placeholder="Ваше имя">
                     <input type="tel" name="phone" placeholder="Телефон">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">Нажимая кнопку «Заказать звонок», я даю свое согласие на обработку моих персональных данных, в соответствии с проектом Закона Республики Беларусь "О персональных данных", на условиях и для целей, определенных в согласии на оброботку персональных данных и принимаю условия пользовательского соглашения</label>
+                    <button type="submit" class="button contact-us__button">Заказать звонок</button>
                 </form>
             </div>
         </div>
     </section>
 
+    <section class="table-price">
+        <div class="wrapper">
+            <h2>Цены на услуги по ремонту ноутбуков</h2>
+            <p>Цены указаны без учета стоимости деталей. Полная стоимость ремонта будет известна после диагностики устройства.</p>
+            <div class="layout-4-column table-price__layout_head">
+                <div class="table-price__layout_head-description">Описание работы</div>
+                <div>Цена</div>
+                <img src="img/table-price/icon_tools.png" alt="гаячный ключ">
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Доставка и диагностика</label>
+                </div>
+                <div class="table-price__middle">10 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена видеокарты на ноутбуке</label>
+                </div>
+                <div class="table-price__middle">100 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Ремонт подсветки в ноутбуке</label>
+                </div>
+                <div class="table-price__middle">80 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена клавиатуры на ноутбуке</label>
+                </div>
+                <div class="table-price__middle">60 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Чистка от пыли</label>
+                </div>
+                <div class="table-price__middle">40 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена wi-fi модуля на ноутбуке</label>
+                </div>
+                <div class="table-price__middle">60 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена акумуляторной батареи</label>
+                </div>
+                <div class="table-price__middle">50 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена видеочипа</label>
+                </div>
+                <div class="table-price__middle">160 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена встроенного микрофона</label>
+                </div>
+                <div class="table-price__middle">50 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена встроенной камеры</label>
+                </div>
+                <div class="table-price__middle">50 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена зарядного устройства</label>
+                </div>
+                <div class="table-price__middle">30 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена материнской платы в ноутбуке</label>
+                </div>
+                <div class="table-price__middle">180 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Ремонт тачпада на ноутбуке</label>
+                </div>
+                <div class="table-price__middle">40 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена модуля тачпад</label>
+                </div>
+                <div class="table-price__middle">90 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Земена SSD в ноутбуке</label>
+                </div>
+                <div class="table-price__middle">100 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена памяти в ноутбуке</label>
+                </div>
+                <div class="table-price__middle">100 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена северного моста</label>
+                </div>
+                <div class="table-price__middle">140 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена термопасты в ноутбуке</label>
+                </div>
+                <div class="table-price__middle">60 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена шлейфа матрицы на ноутбуке</label>
+                </div>
+                <div class="table-price__middle">80 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена южного моста</label>
+                </div>
+                <div class="table-price__middle">120 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Настройка ОС</label>
+                </div>
+                <div class="table-price__middle">30 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена BIOS на ноутбуке</label>
+                </div>
+                <div class="table-price__middle">60 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Ремонт \ Замена звуковой карты</label>
+                </div>
+                <div class="table-price__middle">120 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена сетевой карты</label>
+                </div>
+                <div class="table-price__middle">120 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Ремонт видеочипа</label>
+                </div>
+                <div class="table-price__middle">160 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Ремонт материнской видеокарты</label>
+                </div>
+                <div class="table-price__middle">150 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена мультиконтроллера в ноутбуке</label>
+                </div>
+                <div class="table-price__middle">140 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Ремонт северного моста в ноутбуке</label>
+                </div>
+                <div class="table-price__middle">150 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Ремонт системы охлаждения в ноутбуке</label>
+                </div>
+                <div class="table-price__middle">120 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Ремонт цепей питания</label>
+                </div>
+                <div class="table-price__middle">120 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Ремонт южного моста</label>
+                </div>
+                <div class="table-price__middle">150 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Установка драйверов</label>
+                </div>
+                <div class="table-price__middle">30 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена USB портов на ноутбуке</label>
+                </div>
+                <div class="table-price__middle">80 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Ремонт акумулятора в ноутбуке</label>
+                </div>
+                <div class="table-price__middle">80 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Ремонт жесткого диска в ноутбуке</label>
+                </div>
+                <div class="table-price__middle">60 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена батарейки биос на ноутбуке</label>
+                </div>
+                <div class="table-price__middle">30 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+            <div class="layout-4-column table-price__layout_checkbox">
+                <div class="table-price__left">
+                    <input type="checkbox" name="table-price-description">
+                    <label for="table-price-description">Замена петель на ноутбуке</label>
+                </div>
+                <div class="table-price__middle">100 руб.</div>
+                <div class="table-price__right">
+                    <button class="table-price__button">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tipical">
+        <div class="wrapper">
+            <h2>Типовые неисправности ноутбука</h2>
+            <div class="tipical__list">
+                <div class="tipical__item">
+                    <img src="img/tipical/1.png" alt="ведро">
+                    <p>Случайно удалил файл</p>
+                </div>
+                <div class="tipical__item">
+                    <img src="img/tipical/2.png" alt="кофе">
+                    <p>Пролил жидкость на клавиатуру</p>
+                </div>
+                <div class="tipical__item">
+                    <img src="img/tipical/3.png" alt="вирус">
+                    <p>Поймал вирус</p>
+                </div>
+                <div class="tipical__item">
+                    <img src="img/tipical/4.png" alt="стоп">
+                    <p>Достали всплывающие окна и рекламные банеры</p>
+                </div>
+                <div class="tipical__item">
+                    <img src="img/tipical/5.png" alt="диаграмма">
+                    <p>Компьютер тормозит и греется</p>
+                </div>
+                <div class="tipical__item">
+                    <img src="img/tipical/6.png" alt="ролик">
+                    <p>Не проигрывается видео на компьютере</p>
+                </div>
+                <div class="tipical__item">
+                    <img src="img/tipical/7.png" alt="галерея">
+                    <p>Хочу перенести фотографии с телефона на компьютер</p>
+                </div>
+                <div class="tipical__item">
+                    <img src="img/tipical/8.png" alt="диск">
+                    <p>Закончилось место на диске</p>
+                </div>
+                <div class="tipical__item">
+                    <img src="img/tipical/9.png" alt="нет звука">
+                    <p>Пропал звук</p>
+                </div>
+                <div class="tipical__item">
+                    <img src="img/tipical/10.png" alt="шнур">
+                    <p>Ноутбук перестал заряжаться</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="profit">
         <div class="wrapper">
@@ -239,8 +671,44 @@
                     <p>даем гарантию на любой ремонт и запчасти – от 120 дней</p>
                 </div>
             </div>
+            <img src="img/profit/chudo_technik.png" alt="парень">
+            <img src="img/profit/notebook_on_hands.png" alt="ноутбук">
         </div>
     </section>
 
+    <section class="about-us">
+        <div class="wrapper">
+            <img src="img/about-us/reasonbox_icon_1.png" alt="вопрос">
+            <p>Специалисты сервиса REFIT занимаются не только аппаратным ремонтом ноутбука, но и осуществляют установку операционной системы, драйверов и программного обеспечения, которое необходимо для стабильной работы устройств.</p>
+            <h3>Почему стоит выбрать официальный сервисный центр?</h3>
+            <p>Качественный ремонт ноутбуков возможен только при проведении правильной диагностики. Скорость и правильность определения неисправностей напрямую зависит от квалификации мастера. Ремонтом ноутбуков занимаются специалисты, имеющие профильное образование и большой опыт работы. Все клиенты сервиса имеют права на полностью бесплатную диагностику ноутбука. Все отремонтированные ноутбуки в гродненском сервисе REFIT получают гарантию сроком 4 месяца.
+            Наиболее популярными моделями ноутбуков среди белорусов являются Acer, Asus, MSI,  HP и Lenovo, основными неисправностями которых являются: перегрев ноутбуков, отказы разъемов и портов, выход из строя клавиатуры и проблемы со звуком. Скорость и качество ремонта ноутбуков в Гродно зависит о наличия и качества комплектующих. Сервис REFIT сотрудничает только с проверенными поставщиками, обеспечивающими наличие необходимых оригинальных запасных частей для большинства популярных моделей ноутбуков.</p>
+            <h3>От чего зависит стоимость ремонта</h3>
+            <p>Цены на ремонт ноутбуков определены прейскурантом, что гарантирует прозрачность работы и возможность сравнить стоимость работ в других сервисных центрах. Проект создан при поддержке Правительства Беларуссии, что гарантирует высокий уровень обслуживания и исключает возможность мошенничества и обмана клиентов, обеспечивая наиболее короткий путь от клиента до инженера проверенного сервисного центра. Демократические цены, высокое качество и оперативность ремонтных работ делают городской сервис по ремонту цифровых устройств REFIT одним из лучших ремонтных сервисов в Гродно.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <h3>Заполните форму обратной связи, и мы свяжемся с вами и проконсультируем по всем вопросам!</h3>
+            <div class="footer__form">
+                <form action method="POST">
+                    <div class="layout-3-column">
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <input type="tel" name="phone" placeholder="Телефон">
+                        <button type="submit" class="button contact-us__button">Заказать звонок</button>
+                    </div>                    
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">Нажимая кнопку «Заказать звонок», я даю свое согласие на обработку моих персональных данных, в соответствии с проектом Закона Республики Беларусь "О персональных данных", на условиях и для целей, определенных в согласии на оброботку персональных данных и принимаю условия пользовательского соглашения</label>
+                </form>
+            </div>
+            <p>© Проект принадлежит newqwes, 2020.</p>
+            <div class="layout-3-column">
+                <a href="#"><img src="#" alt="">facebook</a>
+                <a href="#"><img src="#" alt="">vk</a>
+                <a href="#"><img src="#" alt="">insta</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
