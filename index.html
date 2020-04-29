@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/style.css">
     <title>REFIT.BY</title>
+
 </head>
 <body>
     <header class="header">
-        <div class="wrapper wrapper__header-left">
-            <img src="img/СТБ-ISO-9001.jpg" alt="знак сертификата">
-            <a href="#" class="logo">
-                <img src="img/logo.svg" alt="REFIT">
-            </a>
+        <div class="wrapper wrapper__header-top">
+            <div class="logo">
+                <img src="img/СТБ.png" alt="знак сертификата">
+                <img src="img/logo.jpg" alt="REFIT">
+            </div>
             <div class="header__call-back">
-                <a href="tel:+375333826040"><span>ico</span>+375 (33) 382-60-40</a><br><span>пн-сб: 10 до 19</span>
+                <a href="tel:+375333826040"><span class="ico-phone"></span>+375 (33) 382-60-40</a><div>пн-сб: 10 до 19</div>
+            </div>
                 <button class="button header__button">Обратный звонок</button>
             </div>
         </div>
-        <div class="wrapper wrapper__header-right">
+        <div class="wrapper wrapper__header-bottom">
             <nav class="header__navigation">
                 <ul class="navigation-first">
                     <li>Расчет стоимости</li>
@@ -66,27 +70,32 @@
                 <div class="layout-3-column price__ico">
                     <div class="price__box">
                         <img src="img/price/1.png" alt="человек с портфелем">
-                        <h4>Возможен выезд мастера</h4>
+                        <h5>Возможен выезд мастера</h5>
                     </div>
                     <div class="price__box">
                         <img src="img/price/2.png" alt="ноутбук с шестеренкой">
-                        <h4>Диагностика ноутбука</h4>
+                        <h5>Диагностика ноутбука</h5>
                     </div>
                     <div class="price__box">
                         <img src="img/price/2.png" alt="лента гарантии">
-                        <h4>Гарантия на все работы</h4>
+                        <h5>Гарантия на все работы</h5>
                     </div>
                 </div>
             </div>
-            <div class="layout-3-column">
-                <img src="img/price/notebook.png" alt="notebook">
-                <div class="layout-2-column">
-                <select name="brand" id="brand__id">Производитель</select>
-                <select name="model" id="model__id">Модель</select>
-                <button>Узнать стоимость ремонта</button>
+        </div>
+        <div class="price-bg">
+            <div class="wrapper">
+                <div class="layout-3-column">
+                    <img src="img/price/notebook.png" alt="notebook">
+                    <div class="layout-2-column">
+                    <select name="brand" id="brand__id">Производитель</select>
+                    <select name="model" id="model__id">Модель</select>
+                    <button>Узнать стоимость ремонта</button>
+                    </div>
                 </div>
             </div>
         </div>
+        
     </section>
 
     <section class="brand">

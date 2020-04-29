@@ -1,0 +1,20 @@
+{
+  "name": "well-",
+  "version": "1.0.0",
+  "description": "Refit.by === https://ct.mos.ru/remont-noutbukov/",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch sass/style.scss sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newqwes/Well-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newqwes/Well-/issues"
+  },
+  "homepage": "https://github.com/newqwes/Well-#readme"
+}

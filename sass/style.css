@@ -1,0 +1,119 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Ubuntu", Verdana, sans-serif;
+}
+
+h1 {
+  font-family: "Comfortaa", Verdana, sans-serif;
+  font-size: 7.5rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 7.7rem;
+}
+
+h2 {
+  font-family: "Comfortaa", Verdana, sans-serif;
+  font-size: 4.1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.2rem;
+}
+
+h3 {
+  font-family: "Comfortaa", Verdana, sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.1rem;
+}
+
+h4 {
+  font-family: "Comfortaa", Verdana, sans-serif;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 2.3rem;
+}
+
+h5 {
+  font-family: "Comfortaa", Verdana, sans-serif;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.header {
+  padding: 15px 0;
+}
+
+.wrapper__header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__call-back {
+  text-align: right;
+}
+.header__call-back :first-child {
+  text-decoration: none;
+  font-family: "Ubuntu", Verdana, sans-serif;
+  font-size: 2.3rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 3.6rem;
+  letter-spacing: 0.2rem;
+  color: #212460;
+}
+.header__call-back a:hover {
+  color: #308d8b;
+}
+.header__call-back :last-child {
+  font-size: 1.6rem;
+  color: #212460;
+  letter-spacing: 0.2rem;
+}
+
+.wrapper__header-bottom {
+  background: rgba(14, 12, 27, 0.64);
+  color: #ffffff;
+}
+
+.navigation-first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo > * {
+  max-height: 100px;
+}
+.logo :first-child {
+  padding-right: 35px;
+  border-right: 1px solid #e8e8e8;
+}
+.logo :last-child {
+  padding-left: 35px;
+}
+
+.ico-phone {
+  background-image: url("/img/phone call-back-svg.svg");
+  width: 100px;
+  height: 100px;
+}
+
+.price-bg {
+  background-color: #48c1bf;
+}
+
+/*# sourceMappingURL=style.css.map */
