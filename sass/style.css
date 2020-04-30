@@ -5,6 +5,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Ubuntu", Verdana, sans-serif;
+  margin: 0;
 }
 
 h1 {
@@ -47,33 +48,76 @@ h5 {
   line-height: 1.7rem;
 }
 
+.button {
+  transition: 0.3s;
+  padding: 13px 40px;
+  font-family: "Ubuntu", Verdana, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #ffffff;
+  background-color: #48c1bf;
+  border-radius: 3.7rem;
+}
+
+.header__button:hover {
+  background-color: #48dbc3;
+}
+
 .wrapper {
   max-width: 1140px;
   margin: auto;
 }
 
 .header {
-  padding: 15px 0;
+  padding-top: 15px;
 }
 
 .wrapper__header-top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
+}
+
+.wrapper__header-bottom {
+  background: rgba(14, 12, 27, 0.64);
+}
+
+.navigation-first {
+  list-style: none;
+}
+
+.logo > * {
+  max-height: 60px;
+}
+.logo :first-child {
+  padding-right: 35px;
+  border-right: 1px solid #e8e8e8;
+}
+.logo :last-child {
+  padding-left: 40px;
 }
 
 .header__call-back {
+  margin: 0 0 0 auto;
+  padding: 0 40px;
   text-align: right;
+  position: relative;
 }
 .header__call-back :first-child {
   text-decoration: none;
   font-family: "Ubuntu", Verdana, sans-serif;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: bold;
-  line-height: 3.6rem;
+  line-height: 2rem;
   letter-spacing: 0.2rem;
   color: #212460;
+  transition: all 0.3s;
 }
 .header__call-back a:hover {
   color: #308d8b;
@@ -84,32 +128,33 @@ h5 {
   letter-spacing: 0.2rem;
 }
 
-.wrapper__header-bottom {
-  background: rgba(14, 12, 27, 0.64);
-  color: #ffffff;
-}
-
 .navigation-first {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.navigation-first :hover {
+  color: #f4c60e;
 }
 
-.logo > * {
-  max-height: 100px;
+.navigation-first__link {
+  padding-bottom: 6px;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s;
 }
-.logo :first-child {
-  padding-right: 35px;
-  border-right: 1px solid #e8e8e8;
-}
-.logo :last-child {
-  padding-left: 35px;
-}
-
-.ico-phone {
-  background-image: url("/img/phone call-back-svg.svg");
-  width: 100px;
-  height: 100px;
+.header__link:before {
+  content: "";
+  background: url("../img/phone.svg") no-repeat;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 25px;
+  height: 25px;
 }
 
 .price-bg {

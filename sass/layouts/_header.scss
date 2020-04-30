@@ -1,25 +1,49 @@
 .header {
- padding: 15px 0;
+    padding-top: 15px;
 }
 
 .wrapper__header-top {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
+}
+
+.wrapper__header-bottom {
+    background: $color-background-opacity;   
+}
+
+.navigation-first {
+    list-style: none;
+}
+
+.logo {
+    >* {
+        max-height: 60px;
+    }
+    :first-child {
+        padding-right: 35px;
+        border-right: 1px solid #e8e8e8;
+    }
+    :last-child {
+        padding-left: 40px;
+    }
 }
 
 .header__call-back {
+    margin: 0 0 0 auto;
+    padding: 0 40px;
     text-align: right;
+    position: relative;
     :first-child {
         text-decoration: none;
         font-family: 'Ubuntu', Verdana, sans-serif;
-        font-size: 2.3rem;
+        font-size: 1.8rem;
         font-style: normal;
         font-weight: bold;
-        line-height: 3.6rem;
+        line-height: 2rem;
         letter-spacing: 0.2rem;
         color: $color-text;
-        
+        transition: all 0.3s;
     }
     a:hover {
         color: #308d8b;
@@ -29,35 +53,38 @@
         color: $color-text;
         letter-spacing: 0.2rem;
     }
-    
 }
 
-
-.wrapper__header-bottom {
-background: $color-background-opacity;
-color: $color-text-white;
-
-}
 .navigation-first {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    :hover {
+        color: $color-brand2;
+    }
+    
+    
+}
+.navigation-first__link {
+    padding-bottom: 6px;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-text-white;
+    transition: all 0.3s;
+    :hover {
+    }
 }
 
-.logo {
-    >* {
-        max-height: 100px;
-    }
-    :first-child {
-        padding-right: 35px;
-        border-right: 1px solid #e8e8e8;
-    }
-    :last-child {
-        padding-left: 35px;
-    }
-}
-.ico-phone {
-    background-image: url("/img/phone call-back-svg.svg");
-    width: 100px;
-    height: 100px;
+
+.header__link:before {
+    content: '';
+    background: url('../img/phone.svg') no-repeat;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 25px;
+    height: 25px;
 }

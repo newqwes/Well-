@@ -1,0 +1,21 @@
+.button {
+    transition: 0.3s;
+    padding: 13px 40px;
+    font-family: 'Ubuntu', Verdana, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    font-style: normal;
+    color: $color-text-white;
+    background-color: $color-brand;
+    border-radius: 3.7rem;
+}
+
+.header__button:hover {
+     
+        background-color: $color-active;
+    
+}
