@@ -6,10 +6,11 @@
     display: flex;
     align-items: center;
     justify-content: start;
+    padding-bottom: 15px;
 }
 
 .wrapper__header-bottom {
-    background: $color-background-opacity;   
+    background: $color-background-opacity;
 }
 
 .navigation-first {
@@ -37,10 +38,7 @@
     :first-child {
         text-decoration: none;
         font-family: 'Ubuntu', Verdana, sans-serif;
-        font-size: 1.8rem;
-        font-style: normal;
-        font-weight: bold;
-        line-height: 2rem;
+        @include font(1.8rem);
         letter-spacing: 0.2rem;
         color: $color-text;
         transition: all 0.3s;
@@ -66,16 +64,13 @@
     
 }
 .navigation-first__link {
+    @include font(1.2rem, 3rem, 500);
     padding-bottom: 6px;
-    font-size: 1.4rem;
     letter-spacing: 0.2rem;
-    line-height: 3rem;
     text-transform: uppercase;
     text-decoration: none;
     color: $color-text-white;
-    transition: all 0.3s;
-    :hover {
-    }
+    @extend %transition;
 }
 
 

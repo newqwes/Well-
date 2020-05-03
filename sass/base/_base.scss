@@ -9,39 +9,24 @@ body {
 }
 
 h1 {
-    font-family: 'Comfortaa', Verdana, sans-serif;
-    font-size: 7.5rem;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 7.7rem;
+    @include font-add;
+    @include font (7.5rem, 7.7rem, bold, normal);
 }
 
 h2 {
-    font-family: 'Comfortaa', Verdana, sans-serif;
-    font-size: 4.1rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 4.2rem;
+    @include font-add;
+    @include font (4.1rem, 4.1rem, 600);
 }
 h3 {
-    font-family: 'Comfortaa', Verdana, sans-serif;
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 3.1rem;
+    @include font-add;
+    @include font (3rem, 3rem, 500);
 }
 
 h4 {
-    font-family: 'Comfortaa', Verdana, sans-serif;
-    font-size: 2.2rem;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 2.3rem;
+    @include font-add;
+    @include font (2.2rem);
 }
 h5 {
-    font-family: 'Comfortaa', Verdana, sans-serif;
-    font-size: 1.7rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.7rem;
+    @include font-add;
+    @include font (1.7rem, 1.7rem, 400);
 }

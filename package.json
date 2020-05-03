@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/newqwes/Well-/issues"
   },
-  "homepage": "https://github.com/newqwes/Well-#readme"
+  "homepage": "https://github.com/newqwes/Well-#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1",
+    "normalize.css": "^8.0.1"
+  }
 }

@@ -1,8 +1,14 @@
+@import "base/normalize";
+@import "../node_modules/normalize-scss/sass/normalize";
+//abstracts
 @import "abstracts/constants";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
 
 // Base
 @import "base/base";
 @import "base/buttons";
+
 
 // Layouts
 @import "layouts/wrapper";
@@ -10,3 +16,5 @@
 
 // Components
 @import "components/price-bg";
+@import "components/promo";
+
