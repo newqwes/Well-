@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
     <title>REFIT.BY</title>
 
 </head>
@@ -13,6 +14,7 @@
         <div class="wrapper wrapper__header-top">
             <div class="logo">
                 <img src="img/СТБ.png" alt="знак сертификата">
+                <span>авторизованный сертифицированный сервисный центр</span>
                 <img src="img/logo.jpg" alt="REFIT">
             </div>
             <div class="header__call-back">
@@ -36,20 +38,20 @@
         <div class="wrapper promo__wrapper">
             <div class="promo__head">
                 <h1 class="promo__title">Ремонт ноутбуков</h1>
-                <a href="#"><span class="promo__pointer">ico</span></a>
+                <a href="#"><span class="promo__pointer"></span></a>
             </div>
         </div>
     </section>
 
     <section class="prmenu">
         <div class="wrapper">
-            <nav class="prnavigation">
-                <ul class="navigation-second">
-                    <li>Ремонт телефонов</li>
-                    <li>Ремонт планшетов</li>
-                    <li>Ремонт ноутбуков</li>
-                    <li>Ремонт компьютеров</li>
-                    <li>Ремонт моноблоков</li>
+            <nav class="prmenu__navigation">
+                <ul class="prmenu__ul">
+                    <li class="prmenu__li"><a class="prmenu__a" href="#">Ремонт телефонов</a></li>
+                    <li class="prmenu__li"><a class="prmenu__a" href="#">Ремонт планшетов</a></li>
+                    <li class="prmenu__li prmenu__li_active"><a class="prmenu__a prmenu__a_active" href="#">Ремонт ноутбуков</a></li>
+                    <li class="prmenu__li"><a class="prmenu__a" href="#">Ремонт компьютеров</a></li>
+                    <li class="prmenu__li"><a class="prmenu__a" href="#">Ремонт моноблоков</a></li>
                 </ul>
             </nav>
         </div>
@@ -58,15 +60,15 @@
 
     <div class="description">
         <div class="wrapper">
-            <h3>Немного о Нас</h3>
-            <p>Сервис REFIT предлагает быстрое решение проблем, возникших с ноутбуком. Воспользоваться услугами сервиса могут владельцы не только ноутбуков известных марок, но обладатели достаточно редких моделей. Заказать ремонт ноутбуков в Гродно еще никогда не было так просто, достаточно оставить заявку на нашем сайте с указанием проблемы и ожидать приезда специалиста либо самостоятельно привезти ноутбук в пункты приема-выдачи.</p>
+            <h3 class="description__title">Немного о Нас</h3>
+            <p class="description__description">Сервис REFIT предлагает быстрое решение проблем, возникших с ноутбуком. Воспользоваться услугами сервиса могут владельцы не только ноутбуков известных марок, но обладатели достаточно редких моделей. Заказать ремонт ноутбуков в Гродно еще никогда не было так просто, достаточно оставить заявку на нашем сайте с указанием проблемы и ожидать приезда специалиста либо самостоятельно привезти ноутбук в пункты приема-выдачи.</p>
         </div>
     </div>
 
     <section class="price">
         <div class="wrapper">
             <h2 class="price__title">Узнайте стоимость ремонта ноутбука за 30 секунд</h2>
-            <div class="layout-3-column">
+            <div class="price__layout">
                 <div class="price__image">
                     <img src="img/price/calc_photo.jpg" alt="girl">
                 </div>
@@ -89,11 +91,24 @@
         <div class="price-bg">
             <div class="wrapper">
                 <div class="layout-3-column">
-                    <img src="img/price/notebook.png" alt="notebook">
+                    <img class="price-bg__img" src="img/price/notebook.png" alt="notebook">
                     <div class="layout-2-column">
-                    <select name="brand" id="brand__id">Производитель</select>
-                    <select name="model" id="model__id">Модель</select>
-                    <button>Узнать стоимость ремонта</button>
+                    <select name="brand" id="brand__id">
+                        <option selected disabled>Производитель</option>
+                        <option value="pdf">PDF</option>
+                        <option value="txt">txt</option>
+                        <option value="epub">ePub</option>
+                        <option value="fb2">fb2</option>
+                        <option value="mobi">mobi</option>
+                     </select>
+                    <select name="model" id="model__id">
+                        <option selected disabled>Модель</option>
+                        <option value="pdf">PDF</option>
+                        <option value="txt">txt</option>
+                        <option value="epub">ePub</option>
+                        <option value="fb2">fb2</option>
+                        <option value="mobi">mobi</option>
+                     </select>
                     </div>
                 </div>
             </div>

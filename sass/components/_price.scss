@@ -1,0 +1,27 @@
+.price__title {
+    text-align: center;
+    @include font (4rem, 4rem, 600);
+    color: $color-text;
+    letter-spacing: -0.2rem;
+}
+.price__layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.price__image {
+    margin-bottom:-80px;
+    img {
+        border-radius: 50%;
+        border: 25px solid #00b2a9;
+    }
+}
+.price__box {
+        max-width: 200px;
+        margin: 0 20px;
+        h5 {
+            @include font (1.6rem, 2.8rem, 500);
+            color: #212460;
+        }
+}

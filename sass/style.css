@@ -349,7 +349,7 @@ section, main, footer, header, article {
   box-sizing: border-box;
 }
 
-.navigation-first__link, .button {
+.prmenu__a, .navigation-first__link, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -423,6 +423,58 @@ h5 {
   background-color: #48dbc3;
 }
 
+.promo__pointer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.promo__pointer::after {
+  content: "";
+  /* Set an empty content */
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin: auto;
+  /* Centers it */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-right: 5px solid #ffffff;
+  /* This is the left side of the arrow */
+  border-bottom: 5px solid #ffffff;
+  /* This is the right side of the arrow */
+  -webkit-transform: rotate(45deg);
+  /* Rotating the div class so it looks like an arrow */
+  transform: rotate(45deg);
+  -webkit-animation: 1s arrow infinite ease;
+  /* Setting the animation duration to 2 seconds, giving it the name "arrow", the animation iteration count to infinite and the speed curve to ease to make the animation start slow, then go fast then end slow  */
+  animation: 1s arrow infinite ease;
+}
+
+/* Keyframes will bring the arrow to life by adding some up and down movement */
+@-webkit-keyframes arrow {
+  0%, 100% {
+    top: 50px;
+  }
+  50% {
+    top: 80px;
+  }
+}
+@keyframes arrow {
+  0%, 100% {
+    top: 50px;
+  }
+  50% {
+    top: 80px;
+  }
+}
+.layout-6-column, .layout-5-column, .layout-4-column, .layout-3-column, .layout-2-column {
+  display: flex;
+  justify-content: space-between;
+}
+
 .wrapper {
   max-width: 1140px;
   margin: 0 auto;
@@ -447,20 +499,27 @@ h5 {
   list-style: none;
 }
 
+.logo {
+  color: #495057;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
 .logo > * {
   max-height: 60px;
+  max-width: 170px;
 }
 .logo :first-child {
-  padding-right: 35px;
-  border-right: 1px solid #e8e8e8;
+  padding-right: 10px;
 }
 .logo :last-child {
-  padding-left: 40px;
+  border-left: 1px solid #e8e8e8;
+  padding-left: 20px;
 }
 
 .header__call-back {
   margin: 0 0 0 auto;
-  padding: 0 40px;
+  padding: 0 50px;
   text-align: right;
   position: relative;
 }
@@ -471,7 +530,7 @@ h5 {
   font-style: normal;
   font-weight: bold;
   line-height: 1.8rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   color: #212460;
   transition: all 0.3s;
 }
@@ -516,7 +575,12 @@ h5 {
 }
 
 .price-bg {
-  background-color: #48c1bf;
+  background-color: #6fd5cd;
+  padding: 100px 0;
+}
+
+.price-bg__img {
+  padding-top: 30px;
 }
 
 .promo {
@@ -529,6 +593,98 @@ h5 {
 .promo__title {
   text-align: center;
   color: #ffffff;
+}
+
+.prmenu {
+  box-shadow: 1px 1px 23.78px 5.22px rgba(163, 181, 202, 0.61);
+}
+
+.prmenu__ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.prmenu__a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.8rem;
+  letter-spacing: -0.08rem;
+  color: #212460;
+}
+.prmenu__a:hover {
+  color: #308d8b;
+}
+.prmenu__a_active {
+  color: #ffffff;
+}
+.prmenu__a_active:hover {
+  color: #ffffff;
+}
+
+.prmenu__li {
+  padding: 20px 32px;
+  border-left: 1px solid #ddd;
+}
+.prmenu__li:first-child {
+  border-left: none;
+}
+.prmenu__li_active {
+  background: #48c1bf;
+  border-left: none;
+}
+
+.description__title {
+  padding: 50px 0 20px 0;
+  text-align: center;
+}
+
+.description__description {
+  color: #212460;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3rem;
+  padding-bottom: 40px;
+}
+
+.price__title {
+  text-align: center;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4rem;
+  color: #212460;
+  letter-spacing: -0.2rem;
+}
+
+.price__layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.price__image {
+  margin-bottom: -80px;
+}
+.price__image img {
+  border-radius: 50%;
+  border: 25px solid #00b2a9;
+}
+
+.price__box {
+  max-width: 200px;
+  margin: 0 20px;
+}
+.price__box h5 {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.8rem;
+  color: #212460;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,36 @@
+.prmenu {
+    box-shadow: 1px 1px 23.78px 5.22px rgba(163,181,202,.61);
+}
+.prmenu__ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.prmenu__a {
+    text-decoration: none;
+    @include font(1.8rem, 1.8rem, 500);
+    letter-spacing: -0.08rem;
+    color: $color-text;
+    @extend %transition;
+    &:hover {
+        color: $color-active2;
+    }
+    &_active {
+        color: $color-text-white;
+    }
+    &_active:hover {
+        color: $color-text-white;
+    }
+}
+
+.prmenu__li {
+    padding: 20px 32px;
+    border-left: 1px solid #ddd;
+    &:first-child {
+        border-left: none;
+    }
+    &_active {
+        background: $color-brand;
+        border-left: none;
+    }
+}

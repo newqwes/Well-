@@ -1,0 +1,42 @@
+.promo__pointer {
+    width: 100%; 
+    margin: 0 auto;
+    text-align: center;
+ }
+ 
+ .promo__pointer::after {
+     content: "";  /* Set an empty content */
+     width: 20px;
+     height: 20px;
+     position: absolute;
+     margin: auto; /* Centers it */ 
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     border-right: 5px solid $color-text-white; /* This is the left side of the arrow */ 
+     border-bottom: 5px solid $color-text-white; /* This is the right side of the arrow */  
+     -webkit-transform: rotate(45deg); /* Rotating the div class so it looks like an arrow */ 
+     transform: rotate(45deg);
+     -webkit-animation: 1s arrow infinite ease; /* Setting the animation duration to 2 seconds, giving it the name "arrow", the animation iteration count to infinite and the speed curve to ease to make the animation start slow, then go fast then end slow  */   
+     animation: 1s arrow infinite ease;
+ }
+ 
+ /* Keyframes will bring the arrow to life by adding some up and down movement */ 
+ @-webkit-keyframes arrow {
+     0%, 100% {
+        top: 50px; 
+     }
+     50% {
+        top: 80px; 
+     }
+ }
+ 
+ @keyframes arrow {
+     0%, 100% {
+        top: 50px; 
+     }
+     50% {
+        top: 80px; 
+     }
+ }
