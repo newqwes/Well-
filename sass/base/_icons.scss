@@ -1,0 +1,13 @@
+.ico {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.ico_arrow {
+    background-image: url("../../img/promo/Arrow-down.svg");
+    width: 60px;
+    height: 60px;
+    path {
+        fill: #fff;
+    }
+}

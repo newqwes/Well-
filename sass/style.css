@@ -423,56 +423,23 @@ h5 {
   background-color: #48dbc3;
 }
 
-.promo__pointer {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.promo__pointer::after {
-  content: "";
-  /* Set an empty content */
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  margin: auto;
-  /* Centers it */
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-right: 5px solid #ffffff;
-  /* This is the left side of the arrow */
-  border-bottom: 5px solid #ffffff;
-  /* This is the right side of the arrow */
-  -webkit-transform: rotate(45deg);
-  /* Rotating the div class so it looks like an arrow */
-  transform: rotate(45deg);
-  -webkit-animation: 1s arrow infinite ease;
-  /* Setting the animation duration to 2 seconds, giving it the name "arrow", the animation iteration count to infinite and the speed curve to ease to make the animation start slow, then go fast then end slow  */
-  animation: 1s arrow infinite ease;
-}
-
-/* Keyframes will bring the arrow to life by adding some up and down movement */
-@-webkit-keyframes arrow {
-  0%, 100% {
-    top: 50px;
-  }
-  50% {
-    top: 80px;
-  }
-}
-@keyframes arrow {
-  0%, 100% {
-    top: 50px;
-  }
-  50% {
-    top: 80px;
-  }
-}
 .layout-6-column, .layout-5-column, .layout-4-column, .layout-3-column, .layout-2-column {
   display: flex;
   justify-content: space-between;
+}
+
+.ico {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.ico_arrow {
+  background-image: url("../../img/promo/Arrow-down.svg");
+  width: 60px;
+  height: 60px;
+}
+.ico_arrow path {
+  fill: #fff;
 }
 
 .wrapper {
@@ -584,15 +551,22 @@ h5 {
 }
 
 .promo {
-  padding: 5% 0 15% 0;
+  padding: 60px 0 20px 0;
   background: linear-gradient(rgba(0, 0, 47, 0.4), rgba(9, 23, 156, 0.2)), url("../../img/promo/master.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .promo__title {
   text-align: center;
   color: #ffffff;
+  padding-bottom: 20%;
+}
+
+.promo__link {
+  display: flex;
+  justify-content: space-around;
 }
 
 .prmenu {
@@ -625,15 +599,16 @@ h5 {
 }
 
 .prmenu__li {
-  padding: 20px 32px;
-  border-left: 1px solid #ddd;
+  padding: 2rem 3rem;
 }
 .prmenu__li:first-child {
-  border-left: none;
+  border-right: 1px solid #ddd;
 }
 .prmenu__li_active {
   background: #48c1bf;
-  border-left: none;
+}
+.prmenu__li:last-child {
+  border-left: 1px solid #ddd;
 }
 
 .description__title {

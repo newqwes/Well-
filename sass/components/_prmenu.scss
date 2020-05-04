@@ -24,13 +24,14 @@
 }
 
 .prmenu__li {
-    padding: 20px 32px;
-    border-left: 1px solid #ddd;
+    padding: 2rem 3rem;
     &:first-child {
-        border-left: none;
+        border-right: 1px solid #ddd;
     }
     &_active {
         background: $color-brand;
-        border-left: none;
+    }
+    &:last-child {
+        border-left: 1px solid #ddd;
     }
 }
