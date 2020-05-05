@@ -716,7 +716,7 @@ h5 {
 }
 
 .brand {
-  padding: 40px 0;
+  padding: 40px 0 60px 0;
   text-align: center;
 }
 
@@ -747,11 +747,16 @@ h5 {
 }
 
 .contact-us {
-  background: url("../../img/about-us/two_people.jpg");
+  background: url("../../img/contact-us/two_people.jpg");
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: left;
   text-align: center;
+  box-shadow: 0 1px 23.49px 5.51px rgba(163, 181, 202, 0.35);
+}
+
+.contact-us__wrapper {
+  padding: 55px 0;
 }
 
 .contact-us__image {
