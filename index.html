@@ -22,6 +22,9 @@
             </div>
             <button class="button header__button">Обратный звонок</button>
         </div>
+    </header>
+
+    <section class="promo">
         <div class="wrapper__header-bottom">
             <nav class="wrapper header__navigation">
                 <ul class="navigation-first">
@@ -32,9 +35,6 @@
                 </ul>
             </nav>
         </div>
-    </header>
-
-    <section class="promo">
         <div class="wrapper promo__wrapper">
             <div class="promo__head">
                 <h1 class="promo__title">Ремонт ноутбуков</h1>
@@ -90,36 +90,38 @@
         </div>
         <div class="price-bg">
             <div class="wrapper">
-                <div class="layout-3-column">
+                <div class="price-bg__choose">
                     <img class="price-bg__img" src="img/price/notebook.png" alt="notebook">
-                    <div class="layout-2-column">
-                    <select name="brand" id="brand__id">
-                        <option selected disabled>Производитель</option>
-                        <option value="pdf">PDF</option>
-                        <option value="txt">txt</option>
-                        <option value="epub">ePub</option>
-                        <option value="fb2">fb2</option>
-                        <option value="mobi">mobi</option>
-                     </select>
-                    <select name="model" id="model__id">
-                        <option selected disabled>Модель</option>
-                        <option value="pdf">PDF</option>
-                        <option value="txt">txt</option>
-                        <option value="epub">ePub</option>
-                        <option value="fb2">fb2</option>
-                        <option value="mobi">mobi</option>
-                     </select>
-                    </div>
+                    <form class="price-bg__dependent-lists">
+                        <select name="brand" id="brand__id" class="price-bg__select">
+                            <option selected disabled>Производитель</option>
+                            <option value="Apple">Apple</option>
+                            <option value="Asus">Asus</option>
+                            <option value="Lenovo">Lenovo</option>
+                            <option value="Sony">Sony</option>
+                            <option value="HP">HP</option>
+                        </select>
+                        <select name="model" id="model__id" class="price-bg__select">
+                            <option selected disabled>Модель</option>
+                            <option value="Apple">Apple</option>
+                            <option value="Asus">Asus</option>
+                            <option value="Lenovo">Lenovo</option>
+                            <option value="Sony">Sony</option>
+                            <option value="HP">HP</option>
+                        </select>
+                        <div class="price-bg__button">
+                            <button class="button price-bg__submit" type="submit">Узнать стоимость ремонта</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-        
     </section>
 
     <section class="brand">
         <div class="wrapper">
-            <h2>Выберите бренд ноутбука</h2>
-            <div class="layout-6-column">
+            <h2 class="brand__title">Выберите бренд ноутбука</h2>
+            <div class="layout-6-column brand__layout">
                 <div class="brand__image">
                     <a href="#">
                         <img src="img/brand/apple.png" alt="apple">
@@ -196,29 +198,26 @@
                     </a>
                 </div>
             </div>
-        <a href="#">Стрелочка</a>
         </div>
     </section>
 
     <section class="contact-us">
-        <div class="layout-2-column">
-            <div class="contact-us__image">
-                <img src="img/about-us/two_people.jpg" alt="two people">
+        <div class="wrapper contact-us__wrapper">
+            <img src="img/about-us/operBall.jpg" alt="man" class="contact-us__image img">
+            <div class="contact-us__right">
+                <div class="contact-us__content">
+                    <h2 class="contact-us__title">Не нашли свой бренд, или появились вопросы?</h2>
+                    <p class="contact-us__description">Звоните по бесплатному номеру<br><a href="tel:+375333826040" class="contact-us__link">+375 (33) 382-60-40</a><br>или оставьте заявку</p>
+                </div>
+                    <form action method="POST" class="contact-us__form">
+                        <input type="text" name="name" placeholder="Ваше имя" required class="contact-us__input">
+                        <input type="tel" name="phone" placeholder="Телефон" required class="contact-us__input">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label for="checkbox">Нажимая кнопку «Заказать звонок», я даю свое согласие на обработку моих персональных данных, в соответствии с проектом Закона Республики Беларусь "О персональных данных", на условиях и для целей, определенных в согласии на оброботку персональных данных и принимаю условия пользовательского соглашения</label>
+                        <button type="submit" class="button contact-us__button">Заказать звонок</button>
+                    </form>
             </div>
-            <div class="contact-us__content">
-                <img src="img/about-us/operBall.jpg" alt="man">
-                <h2>Не нашли свой бренд, или появились вопросы?</h2>
-                <p>Звоните по бесплатному номеру <a href="tel:+375333826040">+375 (33) 382-60-40</a> или оставьте заявку</p>
-            </div>
-            <div class="contact-us__form">
-                <form action method="POST">
-                    <input type="text" name="name" placeholder="Ваше имя">
-                    <input type="tel" name="phone" placeholder="Телефон">
-                    <input type="checkbox" name="checkbox" id="checkbox">
-                    <label for="checkbox">Нажимая кнопку «Заказать звонок», я даю свое согласие на обработку моих персональных данных, в соответствии с проектом Закона Республики Беларусь "О персональных данных", на условиях и для целей, определенных в согласии на оброботку персональных данных и принимаю условия пользовательского соглашения</label>
-                    <button type="submit" class="button contact-us__button">Заказать звонок</button>
-                </form>
-            </div>
+
         </div>
     </section>
 

@@ -1,3 +1,5 @@
+
+// @include font (1.7rem, 2rem, normal);
 @mixin font($size, $height:$size, $weight: bold, $style: normal) {
     font-size: $size;
     font-style: $style;

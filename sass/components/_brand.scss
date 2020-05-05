@@ -1,0 +1,31 @@
+.brand {
+    padding: 40px 0;
+    text-align: center;
+}
+.brand__title {
+letter-spacing: -0.2rem;
+color: $color-text;
+margin: 40px 0 0 0;
+}
+
+.brand__layout {
+    padding-top: 50px;
+    flex-wrap: wrap;
+    >* {
+        filter: grayscale(100%); 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //border: 1px solid;
+        flex: 1 0 18%; /* explanation below */
+        margin: 10px 5px;
+        height: 100px;
+        opacity: 0.8;
+        
+        @extend %transition;
+        &:hover {
+            opacity: 1;
+            filter: grayscale(0);
+        }
+    }
+}

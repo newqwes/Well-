@@ -1,8 +1,57 @@
 .price-bg {
     background-color: #6fd5cd;
-    padding: 100px 0;
+    padding: 80px 0 20px;
+    @extend %transition;
 }
 
 .price-bg__img {
-    padding-top: 30px;
+    padding: 80px 0 0 70px;
+}
+
+.price-bg__choose {
+    display: flex;
+}
+
+.price-bg__dependent-lists {
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.price-bg__select {
+    margin-left: 40px;
+    width: 330px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    padding: 12px 20px;
+    color: $color-text;
+    @include font (1.7rem, 2rem, normal);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: url("../../img/price/select_arrow_icon.svg") no-repeat right center;
+    background-color: #fff;
+    outline: none;
+}
+
+.price-bg__button {
+    padding: 60px 0;
+    text-align: right;
+
+    
+}
+.price-bg__submit {
+    box-shadow: 4px 8px 16px 0 rgba(28,147,143,.5);
+    width: 95%;
+    height: 45px;
+    color: $color-text;
+    background-color: $color-brand2;
+    @include font (1.7rem, 2rem, normal);
+    &:hover {
+        background-color: #f4d716;
+    }
+    &:active {
+        background: #e3b40e;
+    }
 }

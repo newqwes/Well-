@@ -1,0 +1,55 @@
+.contact-us {
+    background: url("../../img/about-us/two_people.jpg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: left;
+    text-align: center;
+}
+.contact-us__image {
+border-radius: 50%;
+border: 10px solid $color-brand;
+}
+
+.contact-us__title {
+    @include font (3.2rem, 3.2rem, bold);
+    letter-spacing: -0.25rem;
+    color: $color-text;
+}
+
+.contact-us__right {
+    margin: -13% 0 0 50%; // need for row go to right
+    padding: 0 8%;
+    text-align: left;
+}
+
+.contact-us__description {
+    @include font (2.3rem, 2.3rem, 400);
+    letter-spacing: -.1rem;
+    padding-bottom: 25px;
+}
+
+.contact-us__link {
+    text-decoration: none;
+    color: $color-brand;
+    @include font-add;
+    @include font (3.4rem, 5.5rem);
+    letter-spacing: -.1rem;
+}
+
+.contact-us__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us__input {
+    margin: 0 20% 25px 0;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border: 2px solid $color-brand;
+    padding: 1.5rem 1rem;
+    outline: none;
+    color: $color-brand;
+    &::placeholder {
+        color: $color-brand;
+      }
+}
