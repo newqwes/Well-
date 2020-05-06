@@ -12,6 +12,6 @@
     outline: none;
 }
 
-.header__button:hover {
+.header__button:hover, .contact-us__button:hover {
         background-color: $color-active;
 }

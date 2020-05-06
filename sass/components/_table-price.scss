@@ -1,0 +1,122 @@
+.table-price {
+    text-align: center;
+    padding-top: 60px;
+    letter-spacing: -0.1rem;    
+}
+
+.table-price__label {
+    padding-left: 50px !important;
+}
+
+.table-price__title {
+    margin: 0;
+    color: $color-text;
+    letter-spacing: -0.2rem;
+}
+.table-price__description {
+    @include font (1.6rem, 2rem);
+    @include font-add;
+    color: $color-text;
+    padding-bottom: 50px;
+}
+
+.table-price__layout {
+    &_head {
+        padding-bottom: 30px;
+        &-description {
+            background: #00b2a9;
+            display: flex;
+            @include font-add;
+            @include font (3.3rem, 3.5rem);
+            color: $color-text-white;
+            padding: 15px 8%;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    &_checkbox {
+    @include font (2.4rem, 2.6rem, normal);
+    color: #525365;
+    padding: 20px;
+    border-bottom: 2px solid rgba(174,174,174,.25);
+    }
+}
+
+.table-price__button {
+        color: $color-text;
+        @include font-add;
+        letter-spacing: -0.1rem;
+        outline: none;
+        @include font (2.2rem, 2.6rem, normal);
+        cursor: pointer;
+        padding: 5px 25px;
+        border-radius: 2.6rem;
+        border-width: 0;
+        transition: all 0.1s linear;
+        &:hover {
+            background-color: #f4d716;
+            color: $color-text-white;
+        }
+        &:active {
+            background: #e3b40e;
+            color: $color-text-white;
+        }
+}
+
+.table-price__middle {
+    margin: 0 15rem 0 auto;
+}
+// input
+.table-price__left {
+    input[type="checkbox"]:checked + label:before, 
+    input[type="checkbox"]:not(:checked) + label:before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 24px;
+        height: 24px;
+        border: none;
+        background-color: #dadada;
+    }
+    input[type="checkbox"]:checked + label:before, 
+    input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 50%;
+    }
+    input[type="checkbox"]:checked + label:after, 
+    input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    }
+
+    input[type="checkbox"]:checked + label:after, 
+    input[type="checkbox"]:not(:checked) + label:after {
+    left: 4px;
+    top: -2px;
+    width: 19px;
+    height: 10px;
+    border-radius: 2px;
+    border-left: 5px solid $color-brand2;
+    border-bottom: 4px solid $color-brand2;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    }
+    input[type="checkbox"]:not(:checked) + label:after {
+        opacity: 0;
+    }
+    input[type="checkbox"]:checked + label:after {
+        opacity: 1;
+    }
+}
+
+    

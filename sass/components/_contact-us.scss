@@ -46,15 +46,13 @@ border: 10px solid $color-brand;
     flex-direction: column;
 }
 
-.contact-us__input {
-    margin: 0 20% 25px 0;
-    margin-bottom: 20px;
-    border-radius: 25px;
-    border: 2px solid $color-brand;
-    padding: 1.5rem 1rem;
-    outline: none;
-    color: $color-brand;
-    &::placeholder {
-        color: $color-brand;
-      }
+.contact-us__checkbox_label {
+    width: 80%;
+    @include font (1.2rem, 1.2rem, 300);
+    font-size: 1.2rem;
+    color: #495057;
+}
+.contact-us__button {
+    margin-top: 20px;
+    width: 80%;
 }
