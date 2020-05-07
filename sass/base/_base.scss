@@ -9,24 +9,24 @@ body {
 }
 
 h1 {
-    @include font-add;
+    @extend %font-add;
     @include font (7.5rem, 7.7rem, bold, normal);
 }
 
 h2 {
-    @include font-add;
+    @extend %font-add;
     @include font (4.1rem, 4.1rem, 600);
 }
 h3 {
-    @include font-add;
+    @extend %font-add;
     @include font (3rem, 3rem, 500);
 }
 
 h4 {
-    @include font-add;
+    @extend %font-add;
     @include font (2.2rem);
 }
 h5 {
-    @include font-add;
+    @extend %font-add;
     @include font (1.7rem, 1.7rem, 400);
 }

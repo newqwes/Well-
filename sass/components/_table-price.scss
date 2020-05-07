@@ -1,6 +1,6 @@
 .table-price {
     text-align: center;
-    padding-top: 60px;
+    padding: 60px 0;
     letter-spacing: -0.1rem;    
 }
 
@@ -15,7 +15,7 @@
 }
 .table-price__description {
     @include font (1.6rem, 2rem);
-    @include font-add;
+    @extend %font-add;
     color: $color-text;
     padding-bottom: 50px;
 }
@@ -26,7 +26,7 @@
         &-description {
             background: #00b2a9;
             display: flex;
-            @include font-add;
+            @extend %font-add;
             @include font (3.3rem, 3.5rem);
             color: $color-text-white;
             padding: 15px 8%;
@@ -47,7 +47,7 @@
 
 .table-price__button {
         color: $color-text;
-        @include font-add;
+        @extend %font-add;
         letter-spacing: -0.1rem;
         outline: none;
         @include font (2.2rem, 2.6rem, normal);
@@ -81,7 +81,6 @@
         height: 24px;
         border: none;
         background-color: #dadada;
-        background-color: #dadada;
     }
     input[type="checkbox"]:checked + label:before, 
     input[type="checkbox"]:not(:checked) + label:before {
@@ -93,6 +92,8 @@
     position: absolute;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
     }

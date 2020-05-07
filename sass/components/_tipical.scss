@@ -1,0 +1,44 @@
+.tipical {
+    text-align: center;
+    background: url("../../img/tipical/sec5_bg_left.png") top left/300px auto no-repeat,url("../../img/tipical/sec5_bg_right.png") top right/233px auto no-repeat;
+    
+}
+.tipical__image {
+    margin-bottom: 40px;
+}
+.tipical__title {
+    margin-bottom: 10%;
+    letter-spacing: -0.15rem;
+    color: $color-text;
+    position: relative;
+}
+.tipical__title::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -68px;
+    left: 112px;
+    height: 17rem;
+    width: 17rem;
+    background: url("../../img/tipical/circles.png") center/contain no-repeat;
+}
+.tipical__list {
+    padding-bottom: 13%;
+}
+.tipical__item {
+    display: block;
+    position: relative;
+    margin-bottom: 3rem;
+    padding: 0 0 0 5rem;
+    color: #232e77;
+    min-height: 76px;
+    text-align: left;
+    img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 3.3rem;
+        max-height: 40px;
+    }
+    
+}
