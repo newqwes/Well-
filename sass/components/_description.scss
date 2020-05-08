@@ -1,10 +1,12 @@
+.description {
+    padding-bottom: 7%;
+}
 .description__title {
-    padding: 50px 0 20px 0;
+    margin: 6% 0 4% 0;
     text-align: center;
 }
 
 .description__description {
-    color: #212460;
+    color: $color-text;
     @include font (1.8rem, 3rem, 400);
-    padding-bottom: 40px;
 }

@@ -1,6 +1,6 @@
 .table-price {
     text-align: center;
-    padding: 60px 0;
+    padding: 8% 0;
     letter-spacing: -0.1rem;    
 }
 
@@ -9,7 +9,7 @@
 }
 
 .table-price__title {
-    margin: 0;
+    margin: 5% 0 2%;
     color: $color-text;
     letter-spacing: -0.2rem;
 }
@@ -17,7 +17,7 @@
     @include font (1.6rem, 2rem);
     @extend %font-add;
     color: $color-text;
-    padding-bottom: 50px;
+    margin-bottom: 5%;
 }
 
 .table-price__layout {

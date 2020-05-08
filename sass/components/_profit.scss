@@ -1,0 +1,49 @@
+.profit__title1, .profit__title2 {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.profit__title1, .profit__title-block {
+    color: $color-text;
+    letter-spacing: -0.2rem;
+}
+.profit__title2 {
+    color: $color-brand;
+    letter-spacing: -0.1rem;
+    margin-bottom: 7%;
+}
+
+.profit__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.profit__block {
+    flex-basis: 70%;
+}
+.profit__title-block
+ {
+    @include font (2.4rem, 2.6rem);
+    margin-bottom: 4%;
+}
+
+.profit__text-block {
+    @include font (1.5rem, 2rem, normal);
+}
+
+.profit__image-right {
+    margin-left: 10%;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: url("../../img/profit/notebook_on_hands.png") no-repeat center;
+    background-size: auto 300px;
+}
+
+.profit__image-left {
+    margin-bottom: -3px; // не пойму откуда отступ у всего блока до нижнего 3px??? таким образом убрал
+}

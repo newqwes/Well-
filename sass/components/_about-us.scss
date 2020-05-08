@@ -1,0 +1,40 @@
+.about-us {
+    background-color: $color-background;
+    padding: 5% 0 3%;
+    color: #fff;
+}
+
+.about-us__wrapper {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.about-us__image-block {
+    flex-basis: 12%;
+    text-align: center;
+}
+.about-us__image {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    min-height: 140px;
+}
+
+.about-us__text-block {
+    flex-basis: 85%;
+    text-align: justify;
+    h3 {
+        @include font(3.1rem, 3.3rem);
+        letter-spacing: -0.15rem;
+        margin-bottom: 2%;
+    }
+    p {
+        @include font(1.7rem, 2.2rem, normal);
+        margin-bottom: 3%;
+    }
+}
+

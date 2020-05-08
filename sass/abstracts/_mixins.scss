@@ -1,5 +1,5 @@
 
-// @include font (1.7rem, 2rem, normal);
+// @include font($size, $height:$size, $weight: bold, $style: normal);
 @mixin font($size, $height:$size, $weight: bold, $style: normal) {
     font-size: $size;
     font-style: $style;
@@ -7,6 +7,7 @@
     line-height: $height;
 }
 
+// @include columns ($width);
 @mixin columns ($width) {
     display: flex;
     flex-wrap: wrap;

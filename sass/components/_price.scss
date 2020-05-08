@@ -3,6 +3,7 @@
     @include font (4rem, 4rem, 600);
     color: $color-text;
     letter-spacing: -0.2rem;
+    margin-bottom: 5%;
 }
 .price__layout {
     display: flex;
@@ -21,7 +22,8 @@
         max-width: 200px;
         margin: 0 20px;
         h5 {
-            @include font (1.6rem, 2.8rem, 500);
-            color: #212460;
+            @include font (1.6rem, 2.8rem, 600);
+            color: $color-text;
+            letter-spacing: -0.1rem;
         }
 }

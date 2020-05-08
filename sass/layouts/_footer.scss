@@ -1,0 +1,27 @@
+.footer {
+    background-color: #212460;
+    padding: 4% 0 1%;
+    color: #fff;
+}
+
+.footer__title {
+    letter-spacing: -0.1rem;
+    margin-bottom: 3%;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: space-between;
+    a {
+        
+    color: $color-background;
+        text-decoration: none;
+    }
+}
+
+.footer__form {
+    input {
+        margin-right: 2%;
+        padding: 1rem 1rem;
+    }
+}
