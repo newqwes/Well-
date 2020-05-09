@@ -358,7 +358,7 @@ h1, h2, h3, h4, h5, h6, p {
   transition: all 0.3s ease-out;
 }
 
-.table-price__button, .table-price__layout_head-description, .table-price__description, .contact-us__link, h5, h4, h3, h2, h1 {
+.table-price__button, .table-price__layout_head-description, .table-price__description, .contact-us__link, .footer__newqwes, h5, h4, h3, h2, h1 {
   font-family: "Comfortaa", Verdana, sans-serif;
 }
 
@@ -654,6 +654,7 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 .footer__links {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .footer__links a {
   color: #5bcec8;
@@ -665,6 +666,35 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   padding: 1rem 1rem;
 }
 
+.footer__newqwes {
+  animation: neon 0.08s ease-in-out infinite alternate;
+  text-shadow: 0 0 2px rgba(202, 228, 225, 0.92), 0 0 10px rgba(202, 228, 225, 0.34), 0 0 4px rgba(30, 132, 242, 0.52), 0 0 7px rgba(30, 132, 242, 0.92), 0 0 11px rgba(30, 132, 242, 0.78), 0 0 16px rgba(30, 132, 242, 0.92);
+}
+
+.footer__ico {
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+.footer__ico_instagram {
+  background-image: url("../../img/footer/instagram2.svg");
+}
+.footer__ico_vk {
+  background-image: url("../../img/footer/vk.svg");
+}
+.footer__ico_ok {
+  background-image: url("../../img/footer/ok.svg");
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(58, 121, 189, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2;
+  }
+}
 .price-bg {
   background-color: #6fd5cd;
   padding: 80px 0 20px;
@@ -746,6 +776,14 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   justify-content: space-around;
 }
 
+@keyframes neon {
+  from {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(58, 121, 189, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2;
+  }
+}
 .prmenu {
   box-shadow: 1px 1px 23.78px 5.22px rgba(163, 181, 202, 0.61);
 }
@@ -901,7 +939,7 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 
 .contact-us__right {
   margin: -13% 0 0 50%;
-  padding: 0 8%;
+  padding: 5% 8%;
   text-align: left;
 }
 
@@ -999,6 +1037,7 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 
 .table-price__button {
   color: #212460;
+  background-color: #ffffff;
   letter-spacing: -0.1rem;
   outline: none;
   font-size: 2.2rem;
@@ -1164,11 +1203,12 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 }
 
 .profit__image-right {
-  margin-left: 10%;
+  margin: 0 0 5% 10%;
   display: inline-block;
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  border: 5px solid #48c1bf;
   background: url("../../img/profit/notebook_on_hands.png") no-repeat center;
   background-size: auto 300px;
 }

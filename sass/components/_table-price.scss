@@ -47,6 +47,7 @@
 
 .table-price__button {
         color: $color-text;
+        background-color: $color-text-white;
         @extend %font-add;
         letter-spacing: -0.1rem;
         outline: none;

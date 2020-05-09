@@ -35,11 +35,12 @@
 }
 
 .profit__image-right {
-    margin-left: 10%;
+    margin: 0 0 5% 10%;
     display: inline-block;
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    border: 5px solid $color-brand;
     background: url("../../img/profit/notebook_on_hands.png") no-repeat center;
     background-size: auto 300px;
 }
