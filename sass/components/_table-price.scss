@@ -1,7 +1,10 @@
 .table-price {
     text-align: center;
     padding: 8% 0;
-    letter-spacing: -0.1rem;    
+    letter-spacing: -0.1rem;
+    @include media-laptop {
+        padding: 1% 0;
+    }
 }
 
 .table-price__label {
@@ -35,6 +38,9 @@
             justify-content: center;
             flex-direction: column;
             text-align: center;
+            @include media-laptop {
+                padding: 12px 6%;
+            }
         }
     }
     &_checkbox {

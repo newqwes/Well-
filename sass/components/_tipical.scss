@@ -1,10 +1,16 @@
 .tipical {
     text-align: center;
     background: url("../../img/tipical/sec5_bg_left.png") top left/300px auto no-repeat,url("../../img/tipical/sec5_bg_right.png") top right/233px auto no-repeat;
-    
+    @include media-laptop {
+        background: none;
+    }
 }
 .tipical__image {
     margin-bottom: 40px;
+
+    @include media-tablet {
+        width: 95%;
+    };
 }
 .tipical__title {
     margin-bottom: 10%;
@@ -24,6 +30,9 @@
 }
 .tipical__list {
     padding-bottom: 13%;
+    @include media-laptop {
+        padding-bottom: 3%;
+    }
 }
 .tipical__item {
     display: block;

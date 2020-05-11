@@ -3,14 +3,27 @@
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: left;
-    text-align: center;
+    text-align: right;
     box-shadow: 0 1px 23.49px 5.51px rgba(163,181,202,.35);
+    @include media-tablet {
+        background: none;
+    }
 }
 
 .contact-us__image {
 border-radius: 50%;
 border: 10px solid $color-brand;
 margin-top: 2%;
+@include media-tablet {
+    position: absolute;
+    right: 10%;
+ }
+}
+.contact-us__wrapper {
+    @include media-tablet {
+       position: relative;
+       padding: 2% 0;
+    }
 }
 
 .contact-us__title {
@@ -24,6 +37,12 @@ margin-top: 2%;
     margin: -13% 0 0 50%; // need for row go to right
     padding: 5% 8%;
     text-align: left;
+    @include media-laptop {
+        padding: 1% 8%;
+    }
+    @include media-tablet {
+        margin: 0 20% 0 0;
+    }
 }
 
 .contact-us__description {
@@ -43,6 +62,11 @@ margin-top: 2%;
 .contact-us__form {
     display: flex;
     flex-direction: column;
+    @include media-laptop {
+        >* {
+            width: 100%;
+        }
+    }
 }
 
 .contact-us__checkbox_label {
@@ -50,8 +74,12 @@ margin-top: 2%;
     @include font (1.2rem, 1.2rem, 300);
     font-size: 1.2rem;
     color: $color-text-light;
+
 }
 .contact-us__button {
     margin: 5% 0;
     width: 80%;
+    @include media-laptop {
+        width: 100%;
+    }
 }

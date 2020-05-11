@@ -32,6 +32,15 @@
     :last-child {
         border-left: 1px solid #e8e8e8;
         padding-left: 20px;
+        @include media-tablet {
+            border-left: none;
+        padding-left: 0;
+        }
+    }
+    @include media-tablet {
+        &_sertif {
+            display: none;
+        }
     }
 }
 

@@ -43,8 +43,14 @@
     border: 5px solid $color-brand;
     background: url("../../img/profit/notebook_on_hands.png") no-repeat center;
     background-size: auto 300px;
+    @include media-laptop {
+        margin-bottom: 0;
+    }
 }
 
 .profit__image-left {
-    margin-bottom: -3px; // не пойму откуда отступ у всего блока до нижнего 3px??? таким образом убрал
+    margin-bottom: -3px;// не пойму откуда отступ у всего блока до нижнего 3px??? таким образом убрал
+    @include media-laptop {
+        width: 50%;
+    }
 }

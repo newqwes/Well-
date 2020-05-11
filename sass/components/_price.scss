@@ -4,6 +4,10 @@
     color: $color-text;
     letter-spacing: -0.2rem;
     margin-bottom: 5%;
+    @include media-laptop {
+        letter-spacing: -0.3rem;
+        @include font (3.7rem, 4rem, 600);
+    }
 }
 .price__layout {
     display: flex;

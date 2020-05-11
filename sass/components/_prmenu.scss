@@ -5,6 +5,9 @@
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    @include media-laptop {
+        padding: 0;
+    }
 }
 .prmenu__a {
     text-decoration: none;
@@ -12,6 +15,9 @@
     letter-spacing: -0.08rem;
     color: $color-text;
     @extend %transition;
+    @include media-laptop {
+        @include font(1.6rem, 1.8rem, 500);
+    }
     &:hover {
         color: $color-active2;
     }
@@ -25,6 +31,9 @@
 
 .prmenu__li {
     padding: 2rem 3rem;
+    @include media-laptop {
+        padding: 1.8rem 2.2rem;
+    }
     &:first-child {
         border-right: 1px solid #ddd;
     }

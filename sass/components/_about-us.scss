@@ -22,6 +22,9 @@
     border-radius: 50%;
     align-items: center;
     min-height: 140px;
+    @include media-laptop {
+        min-height: 120px;
+    }
 }
 
 .about-us__text-block {

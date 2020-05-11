@@ -26,5 +26,12 @@ color: $color-text;
             opacity: 1;
             filter: grayscale(0);
         }
+        @include media-laptop {
+            flex: 1 0 32%;
+        }
+        @include media-tablet {
+            flex: 1 0 23%;
+        }
     }
+
 }
