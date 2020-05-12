@@ -378,12 +378,28 @@ h1 {
   font-weight: bold;
   line-height: 7.7rem;
 }
+@media (max-width: 414px) {
+  h1 {
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 4.7rem;
+  }
+}
 
 h2 {
   font-size: 4.1rem;
   font-style: normal;
   font-weight: 600;
   line-height: 4.1rem;
+}
+@media (max-width: 414px) {
+  h2 {
+    font-size: 3.3rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 3.5rem;
+  }
 }
 
 h3 {
@@ -398,6 +414,14 @@ h4 {
   font-style: normal;
   font-weight: bold;
   line-height: 2.2rem;
+}
+@media (max-width: 414px) {
+  h4 {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.8rem;
+  }
 }
 
 h5 {
@@ -532,6 +556,16 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
     padding: 0 35px;
   }
 }
+@media (max-width: 1670px) {
+  .wrapper {
+    padding: 0 35px;
+  }
+}
+@media (max-width: 414px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+}
 
 .header {
   padding-top: 15px;
@@ -546,6 +580,11 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 
 .wrapper__header-bottom {
   background: rgba(14, 12, 27, 0.64);
+}
+@media (max-width: 414px) {
+  .wrapper__header-bottom {
+    display: none;
+  }
 }
 
 .navigation-first {
@@ -587,6 +626,11 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   text-align: right;
   position: relative;
 }
+@media (max-width: 414px) {
+  .header__call-back {
+    padding: 0;
+  }
+}
 .header__call-back :first-child {
   text-decoration: none;
   font-family: "Ubuntu", Verdana, sans-serif;
@@ -605,6 +649,11 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   font-size: 1.6rem;
   color: #212460;
   letter-spacing: 0.2rem;
+}
+@media (max-width: 414px) {
+  .header__call-back :last-child {
+    display: none;
+  }
 }
 
 .navigation-first {
@@ -637,6 +686,17 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   width: 25px;
   height: 25px;
 }
+@media (max-width: 414px) {
+  .header__link:before {
+    display: none;
+  }
+}
+
+@media (max-width: 414px) {
+  .header__button {
+    display: none;
+  }
+}
 
 .layout-4-column1 {
   display: flex;
@@ -654,6 +714,16 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 }
 .layout-2-column > * {
   flex-basis: 48%;
+}
+@media (max-width: 414px) {
+  .layout-2-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .layout-2-column > * {
+    flex-basis: 100%;
+  }
 }
 
 .footer {
@@ -719,14 +789,23 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 .price-bg__img {
   padding: 80px 0 0 70px;
 }
+@media (max-width: 414px) {
+  .price-bg__img {
+    display: none;
+  }
+}
 
 .price-bg__choose {
   display: flex;
 }
 
 .price-bg__dependent-lists {
-  margin-left: auto;
-  margin-right: 30px;
+  margin: 0 30px 0 auto;
+}
+@media (max-width: 414px) {
+  .price-bg__dependent-lists > * {
+    margin-bottom: 7%;
+  }
 }
 
 .price-bg__select {
@@ -766,6 +845,14 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 414px) {
+  .price-bg__select {
+    margin-left: 0;
+  }
+  .price-bg__select:first-child {
+    margin-left: 0;
+  }
+}
 
 .price-bg__button {
   padding: 60px 0;
@@ -775,6 +862,12 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   .price-bg__button {
     padding: 30px 0;
     margin-left: 40px;
+  }
+}
+@media (max-width: 414px) {
+  .price-bg__button {
+    padding: 30px 0;
+    margin-left: 0;
   }
 }
 
@@ -842,6 +935,12 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
     padding: 0;
   }
 }
+@media (max-width: 414px) {
+  .prmenu__ul {
+    display: block;
+    text-align: center;
+  }
+}
 
 .prmenu__a {
   text-decoration: none;
@@ -891,6 +990,11 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 .description {
   padding-bottom: 7%;
 }
+@media (max-width: 414px) {
+  .description {
+    padding-top: 10%;
+  }
+}
 
 .description__title {
   margin: 6% 0 4% 0;
@@ -903,6 +1007,21 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   font-style: normal;
   font-weight: 400;
   line-height: 3rem;
+}
+@media (max-width: 414px) {
+  .description__description {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5rem;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 414px) {
+  .price {
+    padding-top: 5%;
+  }
 }
 
 .price__title {
@@ -924,6 +1043,15 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
     line-height: 4rem;
   }
 }
+@media (max-width: 414px) {
+  .price__title {
+    letter-spacing: -0.3rem;
+    font-size: 3.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.6rem;
+  }
+}
 
 .price__layout {
   display: flex;
@@ -939,6 +1067,11 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   border-radius: 50%;
   border: 25px solid #00b2a9;
 }
+@media (max-width: 414px) {
+  .price__image {
+    display: none;
+  }
+}
 
 .price__box {
   max-width: 200px;
@@ -952,10 +1085,33 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   color: #212460;
   letter-spacing: -0.1rem;
 }
+@media (max-width: 414px) {
+  .price__box {
+    margin: 5% auto;
+  }
+}
+
+@media (max-width: 414px) {
+  .price__ico {
+    margin: 10% 3% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: space-around;
+  }
+  .price__ico > * {
+    flex-basis: 38%;
+  }
+}
 
 .brand {
   text-align: center;
-  padding: 7% 0;
+  padding: 7% 0 13%;
+}
+@media (max-width: 414px) {
+  .brand {
+    padding: 25% 0 13%;
+  }
 }
 
 .brand__title {
@@ -1011,11 +1167,17 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   border-radius: 50%;
   border: 10px solid #48c1bf;
   margin-top: 2%;
+  right: calc(50% - 65px);
+  position: absolute;
 }
 @media (max-width: 768px) {
   .contact-us__image {
-    position: absolute;
-    right: 10%;
+    right: 9%;
+  }
+}
+@media (max-width: 414px) {
+  .contact-us__image {
+    display: none;
   }
 }
 
@@ -1035,6 +1197,18 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   color: #212460;
   margin-bottom: 5%;
 }
+@media (max-width: 1670px) {
+  .contact-us__title {
+    margin-right: 10%;
+  }
+}
+@media (max-width: 1670px) {
+  .contact-us__title {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
 
 .contact-us__right {
   margin: -13% 0 0 50%;
@@ -1049,6 +1223,11 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 @media (max-width: 768px) {
   .contact-us__right {
     margin: 0 20% 0 0;
+  }
+}
+@media (max-width: 414px) {
+  .contact-us__right {
+    margin: 0;
   }
 }
 
@@ -1115,11 +1294,28 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 .table-price__label {
   padding-left: 50px !important;
 }
+@media (max-width: 414px) {
+  .table-price__label {
+    padding-left: 0 !important;
+    text-align: left;
+  }
+}
+
+@media (max-width: 414px) {
+  .table-price__label::before {
+    display: none;
+  }
+}
 
 .table-price__title {
   margin: 5% 0 2%;
   color: #212460;
   letter-spacing: -0.2rem;
+}
+@media (max-width: 414px) {
+  .table-price__title {
+    margin: 15% 0 10%;
+  }
 }
 
 .table-price__description {
@@ -1133,6 +1329,16 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 
 .table-price__layout_head {
   padding-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .table-price__layout_head {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 414px) {
+  .table-price__layout_head img {
+    display: none;
+  }
 }
 .table-price__layout_head-description {
   background: #00b2a9;
@@ -1154,6 +1360,24 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
     padding: 12px 6%;
   }
 }
+@media (max-width: 768px) {
+  .table-price__layout_head-description {
+    padding: 8px 3%;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 3rem;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 414px) {
+  .table-price__layout_head-description {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 2.1rem;
+  }
+}
 .table-price__layout_checkbox {
   font-size: 2.4rem;
   font-style: normal;
@@ -1162,6 +1386,14 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   color: #525365;
   padding: 20px;
   border-bottom: 2px solid rgba(174, 174, 174, 0.25);
+}
+@media (max-width: 414px) {
+  .table-price__layout_checkbox {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.8rem;
+  }
 }
 
 .table-price__button {
@@ -1187,9 +1419,19 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   background: #e3b40e;
   color: #ffffff;
 }
+@media (max-width: 414px) {
+  .table-price__button {
+    display: none;
+  }
+}
 
 .table-price__middle {
   margin: 0 15rem 0 auto;
+}
+@media (max-width: 768px) {
+  .table-price__middle {
+    margin: 0 10px 0 auto;
+  }
 }
 
 .table-price__left input[type=checkbox]:checked + label:before,
@@ -1244,6 +1486,11 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   text-align: center;
   background: url("../../img/tipical/sec5_bg_left.png") top left/300px auto no-repeat, url("../../img/tipical/sec5_bg_right.png") top right/233px auto no-repeat;
 }
+@media (max-width: 1670px) {
+  .tipical {
+    background: url("../../img/tipical/sec5_bg_right.png") top right/233px auto no-repeat;
+  }
+}
 @media (max-width: 1140px) {
   .tipical {
     background: none;
@@ -1280,9 +1527,25 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 .tipical__list {
   padding-bottom: 13%;
 }
+@media (max-width: 414px) {
+  .tipical__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .tipical__list > * {
+    flex-basis: 50%;
+  }
+}
 @media (max-width: 1140px) {
   .tipical__list {
     padding-bottom: 3%;
+  }
+}
+@media (max-width: 1670px) {
+  .tipical__list {
+    padding: 5% 10% 10% 0;
   }
 }
 
@@ -1302,6 +1565,14 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   width: 3.3rem;
   max-height: 40px;
 }
+@media (max-width: 414px) {
+  .tipical__item {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.4rem;
+  }
+}
 
 .profit__title1, .profit__title2 {
   margin-bottom: 2%;
@@ -1317,6 +1588,11 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   color: #48c1bf;
   letter-spacing: -0.1rem;
   margin-bottom: 7%;
+}
+@media (max-width: 414px) {
+  .profit__title2 {
+    margin-bottom: 20%;
+  }
 }
 
 .profit__item {
@@ -1345,6 +1621,14 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   font-weight: normal;
   line-height: 2rem;
 }
+@media (max-width: 414px) {
+  .profit__text-block {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.8rem;
+  }
+}
 
 .profit__image-right {
   margin: 0 0 5% 10%;
@@ -1361,6 +1645,17 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
     margin-bottom: 0;
   }
 }
+@media (max-width: 768px) {
+  .profit__image-right {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 414px) {
+  .profit__image-right {
+    display: none;
+  }
+}
 
 .profit__image-left {
   margin-bottom: -3px;
@@ -1368,6 +1663,11 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 @media (max-width: 1140px) {
   .profit__image-left {
     width: 50%;
+  }
+}
+@media (max-width: 414px) {
+  .profit__image-left {
+    width: 90%;
   }
 }
 
@@ -1387,6 +1687,11 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   flex-basis: 12%;
   text-align: center;
 }
+@media (max-width: 414px) {
+  .about-us__image-block {
+    display: none;
+  }
+}
 
 .about-us__image {
   background-color: #fff;
@@ -1401,10 +1706,20 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
     min-height: 120px;
   }
 }
+@media (max-width: 768px) {
+  .about-us__image {
+    min-height: 80px;
+  }
+}
 
 .about-us__text-block {
   flex-basis: 85%;
   text-align: justify;
+}
+@media (max-width: 414px) {
+  .about-us__text-block {
+    flex-basis: 100%;
+  }
 }
 .about-us__text-block h3 {
   font-size: 3.1rem;

@@ -1,3 +1,8 @@
+.price {
+    @include media-mobile {
+        padding-top: 5%;
+    }
+}
 .price__title {
     text-align: center;
     @include font (4rem, 4rem, 600);
@@ -7,6 +12,10 @@
     @include media-laptop {
         letter-spacing: -0.3rem;
         @include font (3.7rem, 4rem, 600);
+    }
+    @include media-mobile {
+        letter-spacing: -0.3rem;
+        @include font (3.4rem, 3.6rem, 600);
     }
 }
 .price__layout {
@@ -21,6 +30,9 @@
         border-radius: 50%;
         border: 25px solid #00b2a9;
     }
+    @include media-mobile {
+        display: none;
+    }
 }
 .price__box {
         max-width: 200px;
@@ -30,4 +42,15 @@
             color: $color-text;
             letter-spacing: -0.1rem;
         }
+        @include media-mobile {
+            margin: 5% auto;
+        }
+}
+.price__ico {
+    @include media-mobile {
+        margin: 10% 3% 5%;
+        @include columns (38%);
+        justify-content: space-around;
+    }
+
 }

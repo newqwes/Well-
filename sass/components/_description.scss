@@ -1,5 +1,8 @@
 .description {
     padding-bottom: 7%;
+    @include media-mobile {
+        padding-top: 10%;
+    }
 }
 .description__title {
     margin: 6% 0 4% 0;
@@ -9,4 +12,8 @@
 .description__description {
     color: $color-text;
     @include font (1.8rem, 3rem, 400);
+    @include media-mobile {
+        @include font (1.6rem, 2.5rem, 400);
+        text-align: justify;
+    }
 }

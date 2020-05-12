@@ -9,9 +9,20 @@
 
 .table-price__label {
     padding-left: 50px !important;
+    @include media-mobile {
+        padding-left: 0 !important;
+        text-align: left;
+    }
 }
-
+.table-price__label::before {
+    @include media-mobile {
+        display: none;
+    }
+}
 .table-price__title {
+    @include media-mobile {
+        margin: 15% 0 10%;
+    }
     margin: 5% 0 2%;
     color: $color-text;
     letter-spacing: -0.2rem;
@@ -26,7 +37,16 @@
 .table-price__layout {
     &_head {
         padding-bottom: 30px;
+        @include media-tablet {
+            justify-content: space-around;
+        }
+        img {
+            @include media-mobile {
+                display: none;
+            }
+        }
         &-description {
+
             background: #00b2a9;
             display: flex;
             @extend %font-add;
@@ -41,6 +61,14 @@
             @include media-laptop {
                 padding: 12px 6%;
             }
+            @include media-tablet {
+                padding: 8px 3%;
+                @include font (3rem);
+                justify-content: space-around;
+            }
+            @include media-mobile {
+                @include font (2rem, 2.1rem);
+            }
         }
     }
     &_checkbox {
@@ -48,6 +76,9 @@
     color: #525365;
     padding: 20px;
     border-bottom: 2px solid rgba(174,174,174,.25);
+    @include media-mobile {
+        @include font (1.8rem, 1.8rem, normal);
+    }
     }
 }
 
@@ -71,10 +102,17 @@
             background: #e3b40e;
             color: $color-text-white;
         }
+        @include media-mobile {
+            display: none;
+        }
 }
 
 .table-price__middle {
     margin: 0 15rem 0 auto;
+    @include media-tablet {
+        margin: 0 10px 0 auto;
+    }
+    
 }
 // input
 .table-price__left {

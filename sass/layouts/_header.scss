@@ -11,6 +11,9 @@
 
 .wrapper__header-bottom {
     background: $color-background-opacity;
+    @include media-mobile {
+        display: none;
+    }
 }
 
 .navigation-first {
@@ -45,10 +48,14 @@
 }
 
 .header__call-back {
+
     margin: 0 0 0 auto;
     padding: 0 50px;
     text-align: right;
     position: relative;
+    @include media-mobile {
+        padding: 0;
+    }
     :first-child {
         text-decoration: none;
         font-family: 'Ubuntu', Verdana, sans-serif;
@@ -64,6 +71,9 @@
         font-size: 1.6rem;
         color: $color-text;
         letter-spacing: 0.2rem;
+        @include media-mobile {
+            display: none;
+        }
     }
 }
 
@@ -96,4 +106,13 @@
     left: 0;
     width: 25px;
     height: 25px;
+    @include media-mobile {
+        display: none;
+    }
+}
+
+.header__button {
+    @include media-mobile {
+        display: none;
+    }
 }

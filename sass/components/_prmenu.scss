@@ -8,6 +8,10 @@
     @include media-laptop {
         padding: 0;
     }
+    @include media-mobile {
+        display: block;
+        text-align: center;
+    }
 }
 .prmenu__a {
     text-decoration: none;

@@ -1,6 +1,10 @@
 .brand {
     text-align: center;
-    padding: 7% 0;
+    padding: 7% 0 13%;
+    @include media-mobile {
+        
+    padding: 25% 0 13%;
+    }
 }
 .brand__title {
 letter-spacing: -0.2rem;

@@ -4,4 +4,7 @@
 
 .layout-2-column {
     @include columns (48%);
+    @include media-mobile {
+        @include columns (100%);
+    }
 }

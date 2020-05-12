@@ -14,6 +14,9 @@
 .about-us__image-block {
     flex-basis: 12%;
     text-align: center;
+    @include media-mobile {
+        display: none;
+    }
 }
 .about-us__image {
     background-color: #fff;
@@ -25,11 +28,17 @@
     @include media-laptop {
         min-height: 120px;
     }
+    @include media-tablet {
+        min-height: 80px;
+    }
 }
 
 .about-us__text-block {
     flex-basis: 85%;
     text-align: justify;
+    @include media-mobile {
+        flex-basis: 100%;
+    }
     h3 {
         @include font(3.1rem, 3.3rem);
         letter-spacing: -0.15rem;

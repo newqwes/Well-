@@ -14,9 +14,13 @@
 border-radius: 50%;
 border: 10px solid $color-brand;
 margin-top: 2%;
+right: calc(50% - 65px);
+position: absolute;
 @include media-tablet {
-    position: absolute;
-    right: 10%;
+    right: 9%;
+ }
+ @include media-mobile {
+    display: none;
  }
 }
 .contact-us__wrapper {
@@ -31,6 +35,14 @@ margin-top: 2%;
     letter-spacing: -0.25rem;
     color: $color-text;
     margin-bottom: 5%;
+    @include media-big-laptop {
+        margin-right: 10%;
+    }
+    @include media-big-laptop {
+        margin: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
 
 .contact-us__right {
@@ -42,6 +54,9 @@ margin-top: 2%;
     }
     @include media-tablet {
         margin: 0 20% 0 0;
+    }
+    @include media-mobile {
+        margin: 0;
     }
 }
 

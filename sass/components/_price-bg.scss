@@ -6,6 +6,9 @@
 
 .price-bg__img {
     padding: 80px 0 0 70px;
+    @include media-mobile {
+        display: none;
+    }
 }
 
 .price-bg__choose {
@@ -13,8 +16,12 @@
 }
 
 .price-bg__dependent-lists {
-    margin-left: auto;
-    margin-right: 30px;
+    margin: 0 30px 0 auto;
+    >* {
+        @include media-mobile {
+            margin-bottom: 7%;
+        }
+    }
 }
 
 .price-bg__select {
@@ -46,6 +53,12 @@
         }
         width: 370px;
     }
+    @include media-mobile {
+        margin-left: 0;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
 }
 
 .price-bg__button {
@@ -54,6 +67,10 @@
     @include media-tablet {
         padding: 30px 0;
         margin-left: 40px;
+    }
+    @include media-mobile {
+        padding: 30px 0;
+        margin-left: 0;
     }
     
 }

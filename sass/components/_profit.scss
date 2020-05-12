@@ -11,6 +11,9 @@
     color: $color-brand;
     letter-spacing: -0.1rem;
     margin-bottom: 7%;
+    @include media-mobile {
+        margin-bottom: 20%;
+    }
 }
 
 .profit__item {
@@ -32,6 +35,9 @@
 
 .profit__text-block {
     @include font (1.5rem, 2rem, normal);
+    @include media-mobile {
+        @include font (1.4rem, 1.8rem, normal);
+    }
 }
 
 .profit__image-right {
@@ -46,11 +52,21 @@
     @include media-laptop {
         margin-bottom: 0;
     }
+    @include media-tablet {
+        width: 200px;
+        height: 200px;
+    }
+    @include media-mobile {
+        display: none;
+    }
 }
 
 .profit__image-left {
     margin-bottom: -3px;// не пойму откуда отступ у всего блока до нижнего 3px??? таким образом убрал
     @include media-laptop {
         width: 50%;
+    }
+    @include media-mobile {
+        width: 90%;
     }
 }

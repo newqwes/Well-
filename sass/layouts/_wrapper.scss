@@ -4,4 +4,10 @@
     @include media-laptop {
         padding: 0 35px;
     }
+    @include media-big-laptop {
+        padding: 0 35px;
+    }
+    @include media-mobile {
+        padding: 0 15px;
+    }
 }
