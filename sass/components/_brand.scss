@@ -10,7 +10,11 @@
 letter-spacing: -0.2rem;
 color: $color-text;
 }
-
+.brand__image {
+    img {
+        width: 80px;
+    }
+}
 .brand__layout {
     padding-top: 50px;
     flex-wrap: wrap;
@@ -32,6 +36,8 @@ color: $color-text;
         }
         @include media-laptop {
             flex: 1 0 32%;
+            filter: none;
+            opacity: 1;
         }
         @include media-tablet {
             flex: 1 0 23%;

@@ -1275,6 +1275,10 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   color: #212460;
 }
 
+.brand__image img {
+  width: 80px;
+}
+
 .brand__layout {
   padding-top: 50px;
   flex-wrap: wrap;
@@ -1297,6 +1301,8 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 @media (max-width: 1140px) {
   .brand__layout > * {
     flex: 1 0 32%;
+    filter: none;
+    opacity: 1;
   }
 }
 @media (max-width: 768px) {
@@ -1758,7 +1764,7 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 3.3rem;
+  width: 4rem;
   max-height: 40px;
 }
 @media (max-width: 414px) {
