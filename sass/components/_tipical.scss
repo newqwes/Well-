@@ -40,7 +40,7 @@
 .tipical__list {
     padding-bottom: 13%;
     @include media-mobile {
-        @include columns (50%);
+        @include columns (48%);
         padding: 0;
     }
     @include media-laptop {
@@ -50,7 +50,7 @@
         padding: 5% 10% 10% 0;
     }
     @include media-tablet {
-        @include columns (50%);
+        @include columns (48%);
         padding:0;
     }
 }
