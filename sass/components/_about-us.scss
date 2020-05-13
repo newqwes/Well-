@@ -44,7 +44,8 @@
         letter-spacing: -0.15rem;
         margin-bottom: 2%;
         @include media-mobile {
-            @include font (2.2rem, 2.2rem, bold, normal);
+            @include font (2.2rem, 2.6rem, bold, normal);
+            text-align: center;
         }
     }
     p {

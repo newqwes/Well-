@@ -37,6 +37,9 @@
     &_active:hover {
         color: $color-text-white;
     }
+    @include media-mobile {
+        letter-spacing: 0.1rem;
+    }
 }
 
 .prmenu__li {

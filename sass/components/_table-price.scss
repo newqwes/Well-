@@ -71,6 +71,7 @@
             }
             @include media-mobile {
                 @include font (2rem, 2.1rem);
+                padding: 10px 6%;
             }
         }
     }

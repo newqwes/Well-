@@ -1106,6 +1106,11 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 .prmenu__a_active:hover {
   color: #ffffff;
 }
+@media (max-width: 414px) {
+  .prmenu__a {
+    letter-spacing: 0.1rem;
+  }
+}
 
 .prmenu__li {
   padding: 2rem 3rem;
@@ -1329,6 +1334,11 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
     background: none;
   }
 }
+@media (max-width: 414px) {
+  .contact-us {
+    padding-top: 30px;
+  }
+}
 
 .contact-us__image {
   border-radius: 50%;
@@ -1405,6 +1415,11 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   line-height: 2.3rem;
   letter-spacing: -0.1rem;
   padding-bottom: 25px;
+}
+@media (max-width: 414px) {
+  .contact-us__description {
+    line-height: 4rem;
+  }
 }
 
 .contact-us__link {
@@ -1548,6 +1563,7 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
     font-style: normal;
     font-weight: bold;
     line-height: 2.1rem;
+    padding: 10px 6%;
   }
 }
 .table-price__layout_checkbox {
@@ -1957,7 +1973,8 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
     font-size: 2.2rem;
     font-style: normal;
     font-weight: bold;
-    line-height: 2.2rem;
+    line-height: 2.6rem;
+    text-align: center;
   }
 }
 .about-us__text-block p {

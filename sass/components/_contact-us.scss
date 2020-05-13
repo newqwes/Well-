@@ -8,8 +8,10 @@
     @include media-tablet {
         background: none;
     }
+    @include media-mobile {
+        padding-top: 30px;
+    }
 }
-
 .contact-us__image {
 border-radius: 50%;
 border: 10px solid $color-brand;
@@ -64,6 +66,9 @@ position: absolute;
     @include font (2.3rem, 2.3rem, 400);
     letter-spacing: -.1rem;
     padding-bottom: 25px;
+    @include media-mobile {
+        line-height: 4rem;
+    }
 }
 
 .contact-us__link {
