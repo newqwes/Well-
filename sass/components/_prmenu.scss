@@ -1,6 +1,12 @@
 .prmenu {
     box-shadow: 1px 1px 23.78px 5.22px rgba(163,181,202,.61);
 }
+
+.prmenu__wrapper {
+    @include media-mobile {
+        padding: 0;
+    }
+}
 .prmenu__ul {
     display: flex;
     justify-content: space-between;
@@ -38,13 +44,22 @@
     @include media-laptop {
         padding: 1.8rem 2.2rem;
     }
+    @include media-mobile {
+        padding: 1.6rem 1.6rem;
+    }
     &:first-child {
         border-right: 1px solid #ddd;
+        @include media-mobile {
+            border: none;
+        }
     }
     &_active {
         background: $color-brand;
     }
     &:last-child {
         border-left: 1px solid #ddd;
+        @include media-mobile {
+            border: none;
+        }
     }
 }

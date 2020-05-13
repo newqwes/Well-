@@ -26,6 +26,12 @@ h2 {
 h3 {
     @extend %font-add;
     @include font (3rem, 3rem, 500);
+    @include media-mobile {
+        @include font (1.8rem, 2.8rem, bold, normal);
+    }
+    @include media-mobilesmall {
+        @include font (1.6rem, 1.8rem, bold, normal);
+    }
 }
 
 h4 {

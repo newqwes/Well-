@@ -12,7 +12,7 @@
     letter-spacing: -0.1rem;
     margin-bottom: 7%;
     @include media-mobile {
-        margin-bottom: 20%;
+        margin-bottom: 12%;
     }
 }
 
@@ -22,10 +22,18 @@
     justify-content: space-around;
     align-items: center;
     margin-bottom: 4%;
+    @include media-mobile {
+        margin-bottom: 12%;
+    }
 }
 
 .profit__block {
     flex-basis: 70%;
+    @include media-mobilesmall {
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
 }
 .profit__title-block
  {
@@ -37,6 +45,7 @@
     @include font (1.5rem, 2rem, normal);
     @include media-mobile {
         @include font (1.4rem, 1.8rem, normal);
+        text-align: justify;
     }
 }
 

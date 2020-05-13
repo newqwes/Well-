@@ -1,5 +1,13 @@
 .header {
     padding-top: 15px;
+    @include media-mobile {
+        position: fixed;
+        background: #fff;
+        width: 100%;
+        z-index: 10;
+        box-shadow: 0 8px 16px 0 rgba(28,147,143,.5);
+        padding-top: 5px;
+    }
 }
 
 .wrapper__header-top {
@@ -7,6 +15,9 @@
     align-items: center;
     justify-content: start;
     padding-bottom: 15px;
+    @include media-mobile {
+        padding-bottom: 5px;
+    }
 }
 
 .wrapper__header-bottom {
@@ -63,6 +74,15 @@
         letter-spacing: 0.1rem;
         color: $color-text;
         transition: all 0.3s;
+        @include media-mobile {
+            color: $color-brand;
+        }
+        @include media-mobilesmall {
+            @include font(1.5rem);
+        }
+        @include media-iPhone5 {
+            @include font(1.8rem);
+        }
     }
     a:hover {
         color: #308d8b;

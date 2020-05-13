@@ -10,7 +10,9 @@
 }
 .tipical__image {
     margin-bottom: 40px;
-
+    @include media-mobile {
+        margin-bottom: 25%;
+    }
     @include media-tablet {
         width: 95%;
     };
@@ -30,6 +32,10 @@
     height: 17rem;
     width: 17rem;
     background: url("../../img/tipical/circles.png") center/contain no-repeat;
+    @include media-mobile {
+        left: 0;
+        width: 14rem;
+    }
 }
 .tipical__list {
     padding-bottom: 13%;
@@ -42,6 +48,10 @@
     }
     @include media-big-laptop {
         padding: 5% 10% 10% 0;
+    }
+    @include media-tablet {
+        @include columns (50%);
+        padding:0;
     }
 }
 .tipical__item {
@@ -61,5 +71,8 @@
     }
     @include media-mobile {
         @include font (1.4rem, 1.4rem, normal);
+    }
+    @include media-mobilesmall {
+        @include font (1.3rem, 1.4rem, normal);
     }
 }

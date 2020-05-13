@@ -43,10 +43,17 @@
         @include font(3.1rem, 3.3rem);
         letter-spacing: -0.15rem;
         margin-bottom: 2%;
+        @include media-mobile {
+            @include font (2.2rem, 2.2rem, bold, normal);
+        }
     }
     p {
         @include font(1.7rem, 2.2rem, normal);
         margin-bottom: 3%;
+        @include media-mobile {
+            margin-bottom: 10%;
+            @include font(1.5rem, 2rem, normal);
+        }
     }
 }
 

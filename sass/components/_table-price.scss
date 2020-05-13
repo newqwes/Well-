@@ -32,6 +32,9 @@
     @extend %font-add;
     color: $color-text;
     margin-bottom: 5%;
+    @include media-mobile {
+        margin-bottom: 15%;
+    }
 }
 
 .table-price__layout {
@@ -78,6 +81,9 @@
     border-bottom: 2px solid rgba(174,174,174,.25);
     @include media-mobile {
         @include font (1.8rem, 1.8rem, normal);
+    }
+    @include media-mobilesmall {
+        @include font (1.6rem, 1.7rem, normal);
     }
     }
 }

@@ -36,6 +36,9 @@ color: $color-text;
         @include media-tablet {
             flex: 1 0 23%;
         }
+        @include media-iPhone5 {
+            flex: 1 0 44%;
+        }
     }
 
 }

@@ -11,3 +11,8 @@
         fill: #fff;
     }
 }
+.logo_logo {
+    @include media-mobile {
+        width: 60%;
+    }
+}

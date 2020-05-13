@@ -36,3 +36,7 @@
 @mixin media-mobilesmall {
     @media (max-width: $mobile-small-width) { @content; }
 }
+
+@mixin media-iPhone5 {
+    @media (max-width: $mobile-iPhone5) { @content; }
+}

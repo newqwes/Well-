@@ -59,6 +59,12 @@
             margin-left: 0;
         }
     }
+    @include media-mobilesmall {
+        width: 340px;
+    }
+    @include media-iPhone5 {
+        width: 285px;
+    }
 }
 
 .price-bg__button {
@@ -89,5 +95,9 @@
     }
     @include media-laptop {
         width: 100%;
+    }
+    @include media-laptop {
+        @include font (1.4rem, 1.8rem, normal);
+        padding: 0;
     }
 }
