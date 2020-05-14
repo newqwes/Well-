@@ -69,6 +69,9 @@ position: absolute;
     @include media-mobile {
         line-height: 4rem;
     }
+    @include media-iPhone5 {
+        @include font (2rem, 2rem, 400);
+    }
 }
 
 .contact-us__link {
@@ -77,6 +80,9 @@ position: absolute;
     @extend %font-add;
     @include font (3.4rem, 5.5rem);
     letter-spacing: -.1rem;
+    @include media-iPhone5 {
+        @include font (3rem, 5.5rem);
+    }
 }
 
 .contact-us__form {

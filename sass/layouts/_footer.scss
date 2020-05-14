@@ -31,8 +31,10 @@
 }
 
 .footer__form {
+    text-align: center;
+    margin: 2% 0 1%;
     input {
-        margin-right: 2%;
+        margin: 0 2% 0 0;
         padding: 1rem 1rem;
     }
     @include media-mobile {

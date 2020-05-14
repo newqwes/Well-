@@ -17,6 +17,10 @@
         letter-spacing: -0.3rem;
         @include font (3.4rem, 3.6rem, 600);
     }
+    @include media-iPhone5 {
+        letter-spacing: -0.2rem;
+        @include font (2.4rem, 2.6rem, 600);
+    }
 }
 .price__layout {
     display: flex;
@@ -38,7 +42,7 @@
         max-width: 200px;
         margin: 0 20px;
         img {
-            width: 50%;
+            width: 40%;
         }
         h5 {
             @include font (1.6rem, 2.8rem, 600);

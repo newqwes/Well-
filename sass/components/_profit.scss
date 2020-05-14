@@ -69,7 +69,9 @@
         display: none;
     }
 }
-
+.profit__image {
+    width: 75px;
+}
 .profit__image-left {
     margin-bottom: -3px;// не пойму откуда отступ у всего блока до нижнего 3px??? таким образом убрал
     @include media-laptop {

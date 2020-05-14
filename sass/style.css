@@ -830,8 +830,12 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   }
 }
 
+.footer__form {
+  text-align: center;
+  margin: 2% 0 1%;
+}
 .footer__form input {
-  margin-right: 2%;
+  margin: 0 2% 0 0;
   padding: 1rem 1rem;
 }
 @media (max-width: 414px) {
@@ -1210,6 +1214,15 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
     line-height: 3.6rem;
   }
 }
+@media (max-width: 320px) {
+  .price__title {
+    letter-spacing: -0.2rem;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.6rem;
+  }
+}
 
 .price__layout {
   display: flex;
@@ -1236,7 +1249,7 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   margin: 0 20px;
 }
 .price__box img {
-  width: 50%;
+  width: 40%;
 }
 .price__box h5 {
   font-size: 1.6rem;
@@ -1421,6 +1434,14 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
     line-height: 4rem;
   }
 }
+@media (max-width: 320px) {
+  .contact-us__description {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+}
 
 .contact-us__link {
   text-decoration: none;
@@ -1430,6 +1451,14 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   font-weight: bold;
   line-height: 5.5rem;
   letter-spacing: -0.1rem;
+}
+@media (max-width: 320px) {
+  .contact-us__link {
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 5.5rem;
+  }
 }
 
 .contact-us__form {
@@ -1522,6 +1551,11 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
     justify-content: space-around;
   }
 }
+@media (max-width: 320px) {
+  .table-price__layout_head {
+    padding-bottom: 0;
+  }
+}
 @media (max-width: 414px) {
   .table-price__layout_head img {
     display: none;
@@ -1564,6 +1598,15 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
     font-weight: bold;
     line-height: 2.1rem;
     padding: 10px 6%;
+  }
+}
+@media (max-width: 320px) {
+  .table-price__layout_head-description {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 2.1rem;
+    padding: 10px 3.5%;
   }
 }
 .table-price__layout_checkbox {
@@ -1894,6 +1937,10 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   .profit__image-right {
     display: none;
   }
+}
+
+.profit__image {
+  width: 75px;
 }
 
 .profit__image-left {
