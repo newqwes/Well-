@@ -1,9 +1,13 @@
 .promo {
     padding-bottom: 20px;
+    padding-top: 90px;
     background: linear-gradient( rgba(0, 0, 47, 0.4), rgba(9, 23, 156, 0.2) ), url('../../img/promo/master.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @include media-mobile {
+      padding-top: 0;
+    }
 
 }
 

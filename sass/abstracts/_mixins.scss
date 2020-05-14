@@ -19,24 +19,24 @@
 
 //@include media-big-laptop;
 @mixin media-big-laptop {
-    @media (max-width: $content-big-width) { @content; }
+    @media (max-width: $media-big-laptop) { @content; }
 }
 @mixin media-laptop {
-    @media (max-width: $content-width) { @content; }
+    @media (max-width: $media-laptop) { @content; }
 }
 
 @mixin media-tablet {
-    @media (max-width: $tablet-width) { @content; }
+    @media (max-width: $media-tablet) { @content; }
 }
 
 @mixin media-mobile {
-    @media (max-width: $mobile-big-width) { @content; }
+    @media (max-width: $media-mobile) { @content; }
 }
 
 @mixin media-mobilesmall {
-    @media (max-width: $mobile-small-width) { @content; }
+    @media (max-width: $media-mobilesmall) { @content; }
 }
 
 @mixin media-iPhone5 {
-    @media (max-width: $mobile-iPhone5) { @content; }
+    @media (max-width: $media-iPhone5) { @content; }
 }

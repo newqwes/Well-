@@ -591,14 +591,14 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 
 .header {
   padding-top: 15px;
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 8px 16px 0 rgba(28, 147, 143, 0.5);
 }
 @media (max-width: 414px) {
   .header {
-    position: fixed;
-    background: #fff;
-    width: 100%;
-    z-index: 10;
-    box-shadow: 0 8px 16px 0 rgba(28, 147, 143, 0.5);
     padding-top: 5px;
   }
 }
@@ -766,8 +766,23 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   background-size: contain;
   width: 40px;
   height: 40px;
-  text-align: center;
-  margin: 0 auto;
+  position: absolute;
+  left: 44%;
+}
+@media (max-width: 1140px) {
+  .header__ico {
+    left: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .header__ico {
+    left: 57%;
+  }
+}
+@media (max-width: 414px) {
+  .header__ico {
+    left: 35%;
+  }
 }
 .header__ico_instagram {
   background-image: url("../../img/footer/instagram2.svg");
@@ -1048,10 +1063,16 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 
 .promo {
   padding-bottom: 20px;
+  padding-top: 90px;
   background: linear-gradient(rgba(0, 0, 47, 0.4), rgba(9, 23, 156, 0.2)), url("../../img/promo/master.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (max-width: 414px) {
+  .promo {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 414px) {
