@@ -50,19 +50,7 @@
     @include media-mobile {
         padding: 1.6rem 1.6rem;
     }
-    &:first-child {
-        border-right: 1px solid #ddd;
-        @include media-mobile {
-            border: none;
-        }
-    }
     &_active {
         background: $color-brand;
-    }
-    &:last-child {
-        border-left: 1px solid #ddd;
-        @include media-mobile {
-            border: none;
-        }
     }
 }
