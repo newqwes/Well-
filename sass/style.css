@@ -447,6 +447,10 @@ h5 {
   line-height: 1.7rem;
 }
 
+.what-is-device {
+  display: none !important;
+}
+
 .button {
   padding: 13px 40px;
   font-family: "Ubuntu", Verdana, sans-serif;

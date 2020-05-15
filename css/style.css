@@ -1325,7 +1325,7 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 }
 
 .brand__image img {
-  width: 80px;
+  width: 120px;
 }
 
 .brand__layout {
