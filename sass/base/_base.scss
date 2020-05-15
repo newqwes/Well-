@@ -45,3 +45,7 @@ h5 {
     @extend %font-add;
     @include font (1.7rem, 1.7rem, 400);
 }
+
+.what-is-device {
+    display: none !important;
+}
