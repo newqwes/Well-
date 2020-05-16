@@ -482,7 +482,7 @@ h5 {
 }
 
 .ico_arrow {
-  background-image: url("../../img/promo/Arrow-down.svg");
+  background-image: url("../img/promo/Arrow-down.svg");
   width: 60px;
   height: 60px;
 }
@@ -789,11 +789,11 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   }
 }
 .header__ico_instagram {
-  background-image: url("../../img/footer/instagram2.svg");
+  background-image: url("../img/footer/instagram2.svg");
   background-repeat: no-repeat;
 }
 .header__ico_instagram:hover {
-  background-image: url("../../img/footer/instagram.svg");
+  background-image: url("../img/footer/instagram.svg");
   background-repeat: no-repeat;
 }
 
@@ -901,13 +901,13 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   margin-right: 10px;
 }
 .footer__ico_instagram {
-  background-image: url("../../img/footer/instagram2.svg");
+  background-image: url("../img/footer/instagram2.svg");
 }
 .footer__ico_vk {
-  background-image: url("../../img/footer/vk.svg");
+  background-image: url("../img/footer/vk.svg");
 }
 .footer__ico_ok {
-  background-image: url("../../img/footer/ok.svg");
+  background-image: url("../img/footer/ok.svg");
 }
 @media (max-width: 414px) {
   .footer__ico {
@@ -976,7 +976,7 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background: url("../../img/price/select_arrow_icon.svg") no-repeat right center;
+  background: url("../img/price/select_arrow_icon.svg") no-repeat right center;
   background-color: #fff;
   outline: none;
 }
@@ -1068,7 +1068,7 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 .promo {
   padding-bottom: 20px;
   padding-top: 90px;
-  background: linear-gradient(rgba(0, 0, 47, 0.4), rgba(9, 23, 156, 0.2)), url("../../img/promo/master.jpg");
+  background: linear-gradient(rgba(0, 0, 47, 0.4), rgba(9, 23, 156, 0.2)), url("../img/promo/master.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1325,7 +1325,7 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 }
 
 .brand__image img {
-  width: 80px;
+  width: 120px;
 }
 
 .brand__layout {
@@ -1366,7 +1366,7 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 }
 
 .contact-us {
-  background: url("../../img/contact-us/two_people.jpg");
+  background: url("../img/contact-us/two_people.jpg");
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: left;
@@ -1754,11 +1754,11 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
 
 .tipical {
   text-align: center;
-  background: url("../../img/tipical/sec5_bg_left.png") top left/300px auto no-repeat, url("../../img/tipical/sec5_bg_right.png") top right/233px auto no-repeat;
+  background: url("../img/tipical/sec5_bg_left.png") top left/300px auto no-repeat, url("../img/tipical/sec5_bg_right.png") top right/233px auto no-repeat;
 }
 @media (max-width: 1670px) {
   .tipical {
-    background: url("../../img/tipical/sec5_bg_right.png") top right/233px auto no-repeat;
+    background: url("../img/tipical/sec5_bg_right.png") top right/233px auto no-repeat;
   }
 }
 @media (max-width: 1140px) {
@@ -1796,7 +1796,7 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   left: 112px;
   height: 17rem;
   width: 17rem;
-  background: url("../../img/tipical/circles.png") center/contain no-repeat;
+  background: url("../img/tipical/circles.png") center/contain no-repeat;
 }
 @media (max-width: 414px) {
   .tipical__title::after {
@@ -1950,7 +1950,7 @@ input[type=text]::placeholder, input[type=tel]::placeholder {
   height: 300px;
   border-radius: 50%;
   border: 5px solid #48c1bf;
-  background: url("../../img/profit/notebook_on_hands.png") no-repeat center;
+  background: url("../img/profit/notebook_on_hands.png") no-repeat center;
   background-size: auto 300px;
 }
 @media (max-width: 1140px) {

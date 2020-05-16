@@ -159,11 +159,11 @@
         left: 35%;
     }
     &_instagram {
-        background-image: url("../../img/footer/instagram2.svg");
+        background-image: url("../img/footer/instagram2.svg");
         background-repeat: no-repeat;
         @extend %transition;
         &:hover {
-            background-image: url("../../img/footer/instagram.svg");
+            background-image: url("../img/footer/instagram.svg");
             background-repeat: no-repeat;
         }
     }

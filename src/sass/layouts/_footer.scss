@@ -64,13 +64,13 @@
     height: 32px;
     margin-right: 10px;
     &_instagram {
-        background-image: url("../../img/footer/instagram2.svg");
+        background-image: url("../img/footer/instagram2.svg");
     }
     &_vk {
-        background-image: url("../../img/footer/vk.svg");
+        background-image: url("../img/footer/vk.svg");
     }
     &_ok {
-        background-image: url("../../img/footer/ok.svg");
+        background-image: url("../img/footer/ok.svg");
     }
     @include media-mobile {
         width: 24px;

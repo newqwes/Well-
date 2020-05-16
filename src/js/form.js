@@ -13,7 +13,7 @@ else $('[name*="device"]').val("Компьютер");
 
 // Галочка после отправки формы
 jQuery(document).ready(function(){
-$('[name*="phone"]').mask("+375 (99) 99-99-999"); //маска номера телефона
+    $('[name*="phone"]').mask("+375 (99) 99-99-999"); //маска номера телефона
 	jQuery("form").submit(function() { // Событие отправки с формы
 		var form_data = jQuery(this).serialize(); // Собираем данные из полей
 		jQuery.ajax({

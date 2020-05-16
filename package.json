@@ -4,8 +4,7 @@
   "description": "Refit.by === https://ct.mos.ru/remont-noutbukov/",
   "main": "index.js",
   "scripts": {
-    "style": "sass --watch sass/style.scss css/style.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "style": "sass --watch src/sass/style.scss src/sass/style.css"
   },
   "repository": {
     "type": "git",

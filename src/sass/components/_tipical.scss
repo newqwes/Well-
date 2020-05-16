@@ -1,8 +1,8 @@
 .tipical {
     text-align: center;
-    background: url("../../img/tipical/sec5_bg_left.png") top left/300px auto no-repeat,url("../../img/tipical/sec5_bg_right.png") top right/233px auto no-repeat;
+    background: url("../img/tipical/sec5_bg_left.png") top left/300px auto no-repeat,url("../img/tipical/sec5_bg_right.png") top right/233px auto no-repeat;
     @include media-big-laptop {
-        background: url("../../img/tipical/sec5_bg_right.png") top right/233px auto no-repeat;
+        background: url("../img/tipical/sec5_bg_right.png") top right/233px auto no-repeat;
     }
     @include media-laptop {
         background: none;
@@ -31,7 +31,7 @@
     left: 112px;
     height: 17rem;
     width: 17rem;
-    background: url("../../img/tipical/circles.png") center/contain no-repeat;
+    background: url("../img/tipical/circles.png") center/contain no-repeat;
     @include media-mobile {
         left: 0;
         width: 14rem;
