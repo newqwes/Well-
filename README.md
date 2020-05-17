@@ -1,5 +1,14 @@
-# 5020.by Refit.by
-:grinning::dog::dog::dog:
+# 5020.by :grinning:
+
+1. pull repositorie
+1. npm install
+
+Refit.by === https://ct.mos.ru/remont-noutbukov/
+
+https://www.youtube.com/watch?v=ouZnGUefneQ&t=3s js home lection
+
+good idea for using a FLEX!!! flex-wrap: wrap; and so on... look at https://youtu.be/fooyYgIuZe8?t=6033
+______________________________________________________________________________________________
 # This is an <h1> tag
 ## This is an <h2> tag
 ###### This is an <h6> tag
@@ -53,19 +62,7 @@ Content in the first column | Content in the second column
 
 
 
+~~this~~
 #1
 mojombo#1
 mojombo/github-flavored-markdown#1
-
-
-
-~~this~~
-_________________________________________________
-$ First pull
-$ npm install
-
-Refit.by === https://ct.mos.ru/remont-noutbukov/
-
-https://www.youtube.com/watch?v=ouZnGUefneQ&t=3s js home lection
-
-good idea for using a FLEX!!! flex-wrap: wrap; and so on... look at https://youtu.be/fooyYgIuZe8?t=6033
