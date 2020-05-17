@@ -1,4 +1,8 @@
-# Well-
+# 5020.by Refit.by
+
+$ First pull
+$ npm install
+
 Refit.by === https://ct.mos.ru/remont-noutbukov/
 
 https://www.youtube.com/watch?v=ouZnGUefneQ&t=3s js home lection
