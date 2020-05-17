@@ -1,0 +1,61 @@
+
+.preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: 0.6s;
+  svg { position: absolute; }
+  z-index: 100;
+}
+
+.preloader__hiden {
+  opacity: 0;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: url('#gooey');
+  animation: rotate $anim-speed ease infinite;
+  
+  .ball {
+    width: $size;
+    height: $size;
+    background-color: $color-brand;
+    border-radius: 100%;
+    
+    &:nth-child(1) { animation: pull-left $anim-speed ease infinite; }
+    &:nth-child(2) { animation: shimmy $anim-speed ease infinite; }
+    &:nth-child(3) { animation: pull-right $anim-speed ease infinite; }
+  }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg) }
+  to { transform: rotate(720deg) }
+}
+
+@keyframes shimmy {
+  0%, 55% { transform: translate(0, 0) }
+  60%, 65% { transform: translate(-$anim-shimmy-out, $anim-shimmy-out) }
+  80%, 85% { transform: translate(0, 0) }
+  90% { transform: scaleX(1.2) translate(-$anim-shimmy-out*2, 0) }
+  100% { transform: translate(0, 0) }
+}
+
+@keyframes pull-left {
+  0%   { transform: scale($anim-pull-scale-down) translateX($anim-pull-translate-in) }
+  50%  { transform: scale(1) translateX(-$anim-pull-translate-out)}
+  75% { transform: scale($anim-pull-scale-down*2) translateX($anim-pull-translate-in*2) }
+  100% { transform: scale($anim-pull-scale-down) translateX($anim-pull-translate-in) }
+}
+
+@keyframes pull-right {
+  0%   { transform: scale($anim-pull-scale-down) translateX(-$anim-pull-translate-in) }
+  50%  { transform: scale(1) translateX($anim-pull-translate-out)}
+  80% { transform: scale($anim-pull-scale-down) translateX(-$anim-pull-translate-in) }
+  90% { transform: scale($anim-pull-scale-down) translateX(-$anim-pull-translate-in*2) }
+  100% { transform: scale($anim-pull-scale-down) translateX(-$anim-pull-translate-in) }
+}

@@ -3,6 +3,16 @@ import "popper.js";
 import swal from 'sweetalert';
 import "./js/jquery.maskedinput.min";
 
+
+//preloader
+let preloader = document.querySelector('.preloader');
+window.addEventListener('load', () => {
+    preloader.classList.add('preloader__hiden');
+    setTimeout(() => {
+        preloader.remove();
+    }, 600);
+});
+
 // Проверяем с какого устройства передана форма
 let detect = new MobileDetect(window.navigator.userAgent);
 if (detect.mobile() !== null) {

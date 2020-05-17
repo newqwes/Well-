@@ -1,7 +1,6 @@
-# 5020.by :grinning:
-## [5020.by](https://5020.by)
-1. pull repository
-1. npm install
+# [5020.by](https://5020.by) :grinning:
+1. ### pull repository
+1. ### npm install
 
 Refit.by === https://ct.mos.ru/remont-noutbukov/
 
@@ -9,15 +8,6 @@ https://www.youtube.com/watch?v=ouZnGUefneQ&t=3s js home lection
 
 good idea for using a FLEX!!! flex-wrap: wrap; and so on... look at https://youtu.be/fooyYgIuZe8?t=6033
 ______________________________________________________________________________________________
-# This is an <h1> tag
-## This is an <h2> tag
-###### This is an <h6> tag
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
-
-http://github.com - automatic!
-[GitHub](http://github.com)
-
 As Kanye West said:
 
 > We're living the future so
@@ -65,4 +55,14 @@ _You **can** combine them_
    1. Item 3a
    1. Item 3b
 
+
+
+# This is an <h1> tag
+## This is an <h2> tag
+###### This is an <h6> tag
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
+
+http://github.com - automatic!
+[GitHub](http://github.com)
 

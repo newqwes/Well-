@@ -3,12 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="src/img/favicon.ico">
+        <link rel="shortcut icon" href="favicon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
         <title>Сервисный центр REFIT.BY</title>
     </head>
     
 <body>
+    <div class="preloader">
+        <div class="loader">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+            <filter id="gooey">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo"></feColorMatrix>
+                <feBlend in="SourceGraphic" in2="goo"></feBlend>
+            </filter>
+            </defs>
+        </svg>
+    </div>
+    
     <header class="header">
         <div class="wrapper wrapper__header-top">
             <div class="logo">
