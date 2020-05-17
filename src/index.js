@@ -1,3 +1,8 @@
+import "jquery";
+import "popper.js";
+import swal from 'sweetalert';
+import "./js/jquery.maskedinput.min";
+
 // Проверяем с какого устройства передана форма
 let detect = new MobileDetect(window.navigator.userAgent);
 if (detect.mobile() !== null) {
@@ -21,11 +26,12 @@ jQuery(document).ready(function(){
 			url: "sendform.php", // Путь к PHP обработчику sendform.php
 			data: form_data,
 			success: swal({
-				title: "Спасибо за заявку в REFIT!",
-                type: "success",
-                showConfirmButton: false,
-                timer: 2000
-            })
+                title: "Спасибо!",
+                text: "REFIT благодарит за оставленную заявку!",
+                icon: "success",
+                button: false
+                //timer: 2000
+              })
         });
         $(this).find('input, textarea').prop('disabled', true); // блокируем повторный ввод данных
         event.preventDefault();

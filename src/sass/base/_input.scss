@@ -1,9 +1,20 @@
-
-// checkbox 
+input {
+    margin: 0 20% 25px 0;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border: 2px solid $color-brand;
+    padding: 1.5rem 1rem;
+    outline: none;
+    color: $color-brand;
+    &::placeholder {
+        color: $color-brand;
+      }
+}
 input[type="checkbox"]:checked, input[type="checkbox"]:not(:checked) {
     position: absolute;
     left: -9999px;
 }
+
 
 input[type="checkbox"]:checked + label, input[type="checkbox"]:not(:checked) + label {
     display: inline-block;
@@ -62,18 +73,4 @@ input[type="checkbox"]:not(:checked) + label:after {
 }
 input[type="checkbox"]:checked + label:after {
     opacity: 1;
-}
-
-// text, tel
-input[type="text"], input[type="tel"] {
-    margin: 0 20% 25px 0;
-    margin-bottom: 20px;
-    border-radius: 25px;
-    border: 2px solid $color-brand;
-    padding: 1.5rem 1rem;
-    outline: none;
-    color: $color-brand;
-    &::placeholder {
-        color: $color-brand;
-      }
 }
