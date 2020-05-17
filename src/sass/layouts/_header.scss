@@ -1,5 +1,5 @@
 .header {
-    padding-top: 15px;
+    padding-top: 5px;
     position: fixed;
     background: #fff;
     width: 100%;
@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     @include media-mobile {
         padding-bottom: 5px;
     }
@@ -22,6 +22,9 @@
 
 .wrapper__header-bottom {
     background: $color-background-opacity;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
     @include media-mobile {
         display: none;
     }
@@ -69,6 +72,7 @@
     padding: 0 50px;
     text-align: right;
     position: relative;
+    color: $color-text;
     @include media-laptop {
         padding: 0;
         margin: 0 auto;
@@ -87,19 +91,28 @@
             @include font(1.5rem);
         }
         @include media-iPhone5 {
-            @include font(1.5rem);
+            @include font(1.4rem);
+            letter-spacing: 0;
         }
     }
     a:hover {
         color: #308d8b;
     }
-    :last-child {
-        font-size: 1.6rem;
-        color: $color-text;
-        letter-spacing: 0.2rem;
+    :nth-child(2) {
+        margin-top: 2px;
+        letter-spacing: 0.1rem;
+        @include font(1.3rem, 1.5rem, 400);
         @include media-mobile {
             display: none;
         }
+    }
+    :last-child {
+        @include font(1.4rem, 1.6rem, 400);
+        letter-spacing: 0.1rem;
+        @include media-mobile {
+            @include font(1.2rem, 1.4rem, 400);
+        }
+
     }
 }
 
@@ -128,10 +141,10 @@
     content: '';
     background: url('../img/phone.svg') no-repeat;
     position: absolute;
-    top: 2px;
-    left: 0;
-    width: 25px;
-    height: 25px;
+    top: 10%;
+    left: 2%;
+    width: 30px;
+    height: 30px;
     @include media-laptop {
         display: none;
     }
@@ -153,7 +166,7 @@
         left: 60%;
     }
     @include media-tablet {
-        left: 57%;
+        left: 58%;
     }
     @include media-mobile {
         left: 35%;
