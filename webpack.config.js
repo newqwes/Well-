@@ -12,6 +12,9 @@ module.exports = (env, options) => {
         devtool: isProduction ? 'none' : 'source-map',
         watch: !isProduction,
         entry: [ './src/index.js','./src/sass/style.scss' ],
+        devServer: {
+            contentBase: './dist', // liveserver
+            },
         output: {
             path: path.join(__dirname, '/dist'),
             filename: '[name].js'
@@ -49,7 +52,8 @@ module.exports = (env, options) => {
             ]
           },
         plugins: [
-            new CleanWebpackPlugin(),
+            //new CleanWebpackPlugin(),
+            new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }), // говорит чтобы не удалял при пересборке html файлы
             new HtmlWebpackPlugin({
                 template: 'index.html'
             }),
