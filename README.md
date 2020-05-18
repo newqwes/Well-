@@ -2,67 +2,18 @@
 1. ### pull repository
 1. ### npm install
 
-Refit.by === https://ct.mos.ru/remont-noutbukov/
-
-https://www.youtube.com/watch?v=ouZnGUefneQ&t=3s js home lection
-
 good idea for using a FLEX!!! flex-wrap: wrap; and so on... look at https://youtu.be/fooyYgIuZe8?t=6033
 ______________________________________________________________________________________________
 As Kanye West said:
 
-> We're living the future so
-> the present is our past.
-
-
-I think you should use an
-`<addr>` element here instead.
-
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
-
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
-
-
-
-~~this~~
-#1
-mojombo#1
-mojombo/github-flavored-markdown#1
-*This text will be italic*
-_This will also be italic_
-
-**This text will be bold**
-__This will also be bold__
-
-_You **can** combine them_
-
-
-
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b
-
-
-1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
-
-
-
-# This is an <h1> tag
-## This is an <h2> tag
-###### This is an <h6> tag
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
-
-http://github.com - automatic!
-[GitHub](http://github.com)
-
+> Список того что нужно сделать
+> с сайтом.
+- [x] Адрес;
+- [x] Строка наведения;
+- [x] Выбор бренда, убрать ссылки;
+- [x] Прелоадер;
+- [x] Связанные списки;
+- [ ] Обратный звонок ссылка на якорь в заказать звонок;
+- [ ] Дополнительное окно на узнать стоимость;
+- [ ] Скрыть список цен если больше 5-ти;
+- [ ] Добавить ссылки на соц.сети и на свои домены;
