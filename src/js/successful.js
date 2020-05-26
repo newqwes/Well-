@@ -18,5 +18,6 @@ jQuery(document).ready(function(){
         });
         $(this).find('input, textarea').prop('disabled', true); // блокируем повторный ввод данных
         event.preventDefault();
+        document.getElementById('modalForm').classList.remove('modal__active');
     });
 });
