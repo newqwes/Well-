@@ -46,7 +46,7 @@
             </div>
             <a class="ico header__ico header__ico_instagram" target="_blank" href="https://instagram.com/refitby?igshid=1o67mowq66npx"></a>
             <div class="header__call-back">
-                <a href="tel:+375333826040" class="header__link">+375 (33) 382-60-40</a><div>пн-сб: 10 до 19</div><div>Гродно, ул.Карбышева 7</div>
+                <a href="tel:+375333826040" class="header__link">+375 (33) 382-60-40</a><div>пн-пт: 10:00 до 19:00</div><div>Гродно, ул.Карбышева 7</div>
             </div>
             <button class="button header__button" id="headerButton">Обратный звонок</button>
         </div>
@@ -235,7 +235,7 @@
 
                     <form class="contact-us__form">
                         <input type="text" name="name" oninvalid="this.setCustomValidity('Забыли заполнить имя')" oninput="setCustomValidity('')" placeholder="Ваше имя" required class="contact-us__input">
-                        <input type="text" name="name" oninvalid="this.setCustomValidity('Забыли заполнить номер')" oninput="setCustomValidity('')" placeholder="Телефон" required class="contact-us__input">
+                        <input type="tel" name="phone" oninvalid="this.setCustomValidity('Забыли заполнить номер')" oninput="setCustomValidity('')" placeholder="Телефон" required class="contact-us__input">
                         <input type="text" name="text" placeholder="Комментарий" required class="contact-us__input">
                         <input type="text" name="device" value="" class="what-is-device">
                         <button type="submit" class="button contact-us__button">Заказать звонок</button>
@@ -466,7 +466,7 @@
             <div class="footer__forms">
                 <form class="footer__form">
                         <input type="text" name="name" oninvalid="this.setCustomValidity('Забыли заполнить имя')" oninput="setCustomValidity('')" required placeholder="Ваше имя">
-                        <input type="text" name="name" oninvalid="this.setCustomValidity('Забыли заполнить номер')" oninput="setCustomValidity('')" required placeholder="Телефон">
+                        <input type="tel" name="phone" oninvalid="this.setCustomValidity('Забыли заполнить номер')" oninput="setCustomValidity('')" required placeholder="Телефон">
                         <button type="submit" class="button">Заказать звонок</button>
                 </form>
             </div>
@@ -488,7 +488,7 @@
             </div>
             <form class="modal__form">
                 <input type="text" name="name" placeholder="как к Вам обращаться" required class="modal__input" oninvalid="this.setCustomValidity('Забыли заполнить имя')" oninput="setCustomValidity('')" >
-                <input type="text" name="name" placeholder="Телефон" required class="modal__input" oninvalid="this.setCustomValidity('Забыли заполнить номер')" oninput="setCustomValidity('')">
+                <input type="tel" name="phone" placeholder="Телефон" required class="modal__input" oninvalid="this.setCustomValidity('Забыли заполнить номер')" oninput="setCustomValidity('')">
                 <textarea placeholder="Опишите проблему и тип устройства" class="modal__textarea" rows="4"></textarea>
                 <input type="text" name="device" value="" class="what-is-device">
                 <button type="submit" class="button modal__button" id="modalBatton">Заказать звонок</button>

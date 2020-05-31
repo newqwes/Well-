@@ -8,7 +8,7 @@ BUTTON.addEventListener('click', () => {
     
 });
 
-$(document).mouseup(function (e) { 
+$(document).mousedown(function (e) { 
     /* https://youtu.be/rIb0OoNWDEs?t=479 взял тут идею через jqvery всё равно подключил эту 
     библиотеку, вообщем смысл в том что бы проверять на нажатие мыши и если не этот элемент 
     главный в модалке и все его внутренности то закрываем модалку
