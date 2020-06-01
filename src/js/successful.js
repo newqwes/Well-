@@ -12,8 +12,8 @@ jQuery(document).ready(function(){
                 title: "Спасибо!",
                 text: "REFIT благодарит за оставленную заявку!",
                 icon: "success",
-                button: false
-                //timer: 2000
+                button: false,
+                timer: 1500
               })
         });
         $(this).find('input, textarea').prop('disabled', true); // блокируем повторный ввод данных
