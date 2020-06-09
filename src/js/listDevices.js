@@ -6,23 +6,23 @@ const gadjetModelSelectOptionsData = {
     Asus: ["Zenbook J21", "Jetfit X", "TandraGaming", "Super Vision 9"]
     /* 
     Добавить список сюда!!! 
-    
     <option value="Lenovo">Lenovo</option>
     <option value="Sony">Sony</option>
     <option value="HP">HP</option>
-
     */
-};
-let brand = document.querySelector("#brand__id");
-let model = document.querySelector("#model__id");
-window.onload = selectOptions;
-brand.onchange = selectOptions;
+}
+let brand = document.querySelector("#brand__id")
+let model = document.querySelector("#model__id")
+window.onload = selectOptions
+brand.onchange = selectOptions
 function selectOptions(event) {
-    model.innerHTML = "";
-    let c = this.value || "Standart", o;// стандартный выбор
+    model.innerHTML = ""
+    let c = this.value || "Standart", o// стандартный выбор
+
     for (let i = 0; i < gadjetModelSelectOptionsData[c].length; i++) {
-        o = new Option(gadjetModelSelectOptionsData[c][i],i,false,false);
-        model.add(o);
-        console.log(model.add(o));
-    };
-};
+        o = new Option(gadjetModelSelectOptionsData[c][i],i,false,false)
+        model.add(o)
+    }
+
+}
+

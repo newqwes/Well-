@@ -1,6 +1,6 @@
 .table-price {
     text-align: center;
-    padding: 4% 0;
+    padding: 0;
     letter-spacing: -0.1rem;
     @include media-laptop {
         padding: 1% 0;
@@ -180,4 +180,19 @@
     }
 }
 
-    
+.table-price__hidden {
+    display: none;
+}
+.table-price__button_hide {
+    margin: 30px auto 50px;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    background-image: url("../img/promo/Arrow-downList.svg");
+}
+
+.table-price__button_active {
+    transform: rotate(180deg);
+}
