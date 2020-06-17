@@ -10,5 +10,5 @@ BUTTON_PRICE_BG.addEventListener('click', () => {
     HIDDEN_DESCRIPTION.classList.add('price-bg__description-active');
     // Ищем что выбрал пользователь в списке получилось через jq по другому что то не получилось на чистом
     //   js $('#model__id option:selected').html() можно и ...val()
-    HIDDEN_DESCRIPTION.innerHTML = `Цена на ремонт ${SELECT_BRAND.value} ${$('#model__id option:selected').html()} от 70р`;
+    HIDDEN_DESCRIPTION.innerHTML = `${SELECT_BRAND.value} ${$('#model__id option:selected').html()} от 70р`;
 });
