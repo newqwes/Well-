@@ -7,11 +7,9 @@ $text = $_POST['text']; // Берём данные из input c атрибуто
 $textarea = $_POST['textarea']; // Берём данные из input c атрибутом name="textarea"
 $token = "1274746361:AAFaEfCtiMMEPu_IThlaFWyP37QUKEcs96o"; // Тут пишем токен
 $chat_id = "-404256336"; // Тут пишем ID группы, куда будут отправляться сообщения
-$sitename = "5020.by"; //Указываем название сайта
 
 $arr = array(
   'Дата: ' => date('d-m-Y H:i:s'),
-  'Заказ с сайта: ' => $sitename,
   'Имя: ' => $name,
   'Телефон: %2B' => $phone,
   'Комментарий: ' => $text?:$textarea,
