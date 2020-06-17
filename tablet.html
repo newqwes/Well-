@@ -234,10 +234,10 @@
                     <p class="contact-us__description">Звоните по бесплатному номеру<br><a href="tel:+375333826040" class="contact-us__link">+375 (33) 382-60-40</a><br>или оставьте заявку</p>
                 </div>
                 <form class="contact-us__form">
-                    <input type="text" name="name" oninvalid="this.setCustomValidity('Забыли заполнить имя')" oninput="setCustomValidity('')" placeholder="Ваше имя" required class="contact-us__input">
-                    <input type="tel" name="phone" oninvalid="this.setCustomValidity('Забыли заполнить номер')" oninput="setCustomValidity('')" placeholder="Телефон" required class="contact-us__input">
-                    <input type="text" name="text" placeholder="Комментарий" required class="contact-us__input">
-                    <input type="text" name="device" value="" class="what-is-device">
+                    <input autocomplete="off" type="text" name="name" oninvalid="this.setCustomValidity('Забыли заполнить имя')" oninput="setCustomValidity('')" placeholder="Ваше имя" required class="contact-us__input">
+                    <input autocomplete="off" type="tel" name="phone" oninvalid="this.setCustomValidity('Забыли заполнить номер')" oninput="setCustomValidity('')" placeholder="Телефон" class="contact-us__input">
+                    <input autocomplete="off" type="text" name="text" placeholder="Комментарий" required class="contact-us__input">
+                    <input autocomplete="off" type="text" name="device" value="" class="what-is-device">
                     <button type="submit" class="button contact-us__button">Заказать звонок</button>
                 </form>
             </div>
@@ -255,7 +255,7 @@
             </div>
             <div class="layout-4-column table-price__layout_checkbox">
                 <div class="table-price__left">
-                    <input class="table-price__input" id="table-price__input_1" type="checkbox" name="table-price__input_1">
+                    <input autocomplete="off" class="table-price__input" id="table-price__input_1" type="checkbox" name="table-price__input_1">
                     <label class="table-price__label" for="table-price__input_1">Доставка и диагностика</label>
                 </div>
                 <div class="table-price__middle">10 руб.</div>
@@ -265,7 +265,7 @@
             </div>
             <div class="layout-4-column table-price__layout_checkbox">
                 <div class="table-price__left">
-                    <input class="table-price__input" id="table-price__input_2" type="checkbox" name="table-price__input_2">
+                    <input autocomplete="off" class="table-price__input" id="table-price__input_2" type="checkbox" name="table-price__input_2">
                     <label class="table-price__label" for="table-price__input_2">Замена / ремонт флеш памяти</label>
                 </div>
                 <div class="table-price__middle">100 руб.</div>
@@ -275,7 +275,7 @@
             </div>
             <div class="layout-4-column table-price__layout_checkbox">
                 <div class="table-price__left">
-                    <input class="table-price__input" id="table-price__input_3" type="checkbox" name="table-price__input_3" >
+                    <input autocomplete="off" class="table-price__input" id="table-price__input_3" type="checkbox" name="table-price__input_3" >
                     <label class="table-price__label" for="table-price__input_3">Замена несъемного аккумулятора в планшете</label>
                 </div>
                 <div class="table-price__middle">80 руб.</div>
@@ -285,7 +285,7 @@
             </div>
             <div class="layout-4-column table-price__layout_checkbox">
                 <div class="table-price__left">
-                    <input class="table-price__input" id="table-price__input_4" type="checkbox" name="table-price__input_4">
+                    <input autocomplete="off" class="table-price__input" id="table-price__input_4" type="checkbox" name="table-price__input_4">
                     <label class="table-price__label" for="table-price__input_4">Замена встроенного микрофона</label>
                 </div>
                 <div class="table-price__middle">60 руб.</div>
@@ -295,7 +295,7 @@
             </div>
             <div class="layout-4-column table-price__layout_checkbox">
                 <div class="table-price__left">
-                    <input class="table-price__input" id="table-price__input_5" type="checkbox" name="table-price__input_5">
+                    <input autocomplete="off" class="table-price__input" id="table-price__input_5" type="checkbox" name="table-price__input_5">
                     <label class="table-price__label" for="table-price__input_5">Почистить динамик планшета</label>
                 </div>
                 <div class="table-price__middle">40 руб.</div>
@@ -461,8 +461,8 @@
             <h3 class="footer__title">Заполните форму обратной связи, и мы свяжемся с вами и проконсультируем по всем вопросам!</h3>
             <div class="footer__forms">
                 <form class="footer__form">
-                        <input type="text" name="name" oninvalid="this.setCustomValidity('Забыли заполнить имя')" oninput="setCustomValidity('')" required placeholder="Ваше имя">
-                        <input type="tel" name="phone" oninvalid="this.setCustomValidity('Забыли заполнить номер')" oninput="setCustomValidity('')" required placeholder="Телефон">
+                        <input autocomplete="off" type="text" name="name" oninvalid="this.setCustomValidity('Забыли заполнить имя')" oninput="setCustomValidity('')" required placeholder="Ваше имя">
+                        <input autocomplete="off" type="tel" name="phone" oninvalid="this.setCustomValidity('Забыли заполнить номер')" oninput="setCustomValidity('')" placeholder="Телефон">
                         <button type="submit" class="button">Заказать звонок</button>
                 </form>
             </div>
@@ -481,12 +481,13 @@
         <div class="modal__wrapper" id="modalBattonClose">
             <div class="modal__title">
                 <h3>Обратный звонок</h3>
+                <p>Оставьте свои данные и наши<br> специалисты сразу с Вами свяжутся</p>
             </div>
             <form class="modal__form">
-                <input type="text" name="name" placeholder="как к Вам обращаться" required class="modal__input" oninvalid="this.setCustomValidity('Забыли заполнить имя')" oninput="setCustomValidity('')" >
-                <input type="tel" name="phone" placeholder="Телефон" required class="modal__input" oninvalid="this.setCustomValidity('Забыли заполнить номер')" oninput="setCustomValidity('')">
+                <input autocomplete="off" type="text" name="name" placeholder="как к Вам обращаться" required class="modal__input" oninvalid="this.setCustomValidity('Забыли заполнить имя')" oninput="setCustomValidity('')" >
+                <input autocomplete="off" type="tel" name="phone" placeholder="Телефон" class="modal__input" oninvalid="this.setCustomValidity('Забыли заполнить номер')" oninput="setCustomValidity('')">
                 <textarea placeholder="Опишите проблему и тип устройства" class="modal__textarea" rows="4"></textarea>
-                <input type="text" name="device" value="" class="what-is-device">
+                <input autocomplete="off" type="text" name="device" value="" class="what-is-device">
                 <button type="submit" class="button modal__button" id="modalBatton">Заказать звонок</button>
             </form>
     

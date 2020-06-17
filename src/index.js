@@ -9,3 +9,4 @@ import "./js/successful";
 import "./js/listDevices";
 import "./js/modalForm";
 import "./js/hideListMoreThan";
+import "./js/priceBgGajet";
