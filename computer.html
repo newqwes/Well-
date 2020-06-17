@@ -525,7 +525,7 @@
             <form class="modal__form">
                 <input autocomplete="off" type="text" name="name" placeholder="как к Вам обращаться" required class="modal__input" oninvalid="this.setCustomValidity('Забыли заполнить имя')" oninput="setCustomValidity('')" >
                 <input autocomplete="off" type="tel" name="phone" placeholder="Телефон" class="modal__input" oninvalid="this.setCustomValidity('Забыли заполнить номер')" oninput="setCustomValidity('')">
-                <textarea placeholder="Опишите проблему и тип устройства" class="modal__textarea" rows="4"></textarea>
+                <textarea name="textarea" placeholder="Опишите проблему и тип устройства" class="modal__textarea" rows="4"></textarea>
                 <input autocomplete="off" type="text" name="device" value="" class="what-is-device">
                 <button type="submit" class="button modal__button" id="modalBatton">Заказать звонок</button>
             </form>
