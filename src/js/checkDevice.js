@@ -1,4 +1,4 @@
-const detect = new MobileDetect(window.navigator.userAgent)
+const detect = new MobileDetect(window.navigator.userAgent);
 // if (detect.mobile() !== null) {
 //     $('[name*="device"]').val("Телефон или планшет: " + detect.mobile() + " Операционная система: " + detect.os() + " UserAgent: " + detect.userAgent());
 // }
@@ -10,8 +10,8 @@ const detect = new MobileDetect(window.navigator.userAgent)
 
 // использовал es6 тернарный оператор и обратные кавычки для более короткой и локаничной записи
 detect.mobile() !== null? 
-$('[name*="device"]').val(`${detect.mobile()} ${detect.os()} ${detect.userAgent()} ОС->${window.navigator.oscpu()}`) : 
-$('[name*="device"]').val(`компьютер ${detect.os()} ${detect.userAgent()} ОС->${window.navigator.oscpu()}`)
+$('[name*="device"]').val(`${detect.mobile()} ${detect.os()} ${detect.userAgent()}`) : 
+$('[name*="device"]').val(`компьютер ${detect.os()} ${detect.userAgent()}`);
 
 //  console.log("Mobile: " + detect.mobile());       // телефон или планшет 
 //  console.log("Phone: " + detect.phone());         // телефон 
