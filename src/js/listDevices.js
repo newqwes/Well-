@@ -10,19 +10,20 @@ const gadjetModelSelectOptionsData = {
     <option value="Sony">Sony</option>
     <option value="HP">HP</option>
     */
-}
-let brand = document.querySelector("#brand__id")
-let model = document.querySelector("#model__id")
-window.onload = selectOptions
-brand.onchange = selectOptions
-function selectOptions(event) {
-    model.innerHTML = ""
-    let c = this.value || "Standart", o// стандартный выбор
+};
+let brand = document.querySelector("#brand__id");
+let model = document.querySelector("#model__id");
 
+window.onload = selectOptions;
+brand.onchange = selectOptions;
+function selectOptions(event) {
+    model.innerHTML = "";
+    let c = this.value || "Standart", o;// стандартный выбор
+    // c - Название фирмы например Apple
+    // o - 
     for (let i = 0; i < gadjetModelSelectOptionsData[c].length; i++) {
         o = new Option(gadjetModelSelectOptionsData[c][i],i,false,false)
         model.add(o)
-    }
-
-}
+    };
+};
 

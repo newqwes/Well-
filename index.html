@@ -131,7 +131,9 @@
                         </select>
                         <select name="model" id="model__id" class="price-bg__select">
                         </select>
-                        <h3 id="price-bg__hidden-price" class="price-bg__description-hidden"></h3>
+                        <select name="problem" id="problem__id" class="price-bg__select">
+                        </select>
+                        <!-- <h3 id="price-bg__hidden-price" class="price-bg__description-active">ddsf d fdsd df sdfdfsfsf</h3> -->
                         <div class="price-bg__button">
                             <button class="button price-bg__submit" id="btnSubmitSelectModelGajet" type="button">Узнать стоимость ремонта</button>
                         </div>
@@ -529,7 +531,7 @@
         <div class="modal__wrapper" id="modalBattonClose">
             <div class="modal__title">
                 <h3>Обратный звонок</h3>
-                <p>Оставьте свои данные и наши<br> специалисты сразу с Вами свяжутся</p>
+                <p id="modalDescription">Оставьте свои данные и наши<br> специалисты сразу с Вами свяжутся</p>
             </div>
             <form class="modal__form">
                 <input autocomplete="off" type="text" name="name" placeholder="как к Вам обращаться" required class="modal__input" oninvalid="this.setCustomValidity('Забыли заполнить имя')" oninput="setCustomValidity('')" >
