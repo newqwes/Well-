@@ -4,6 +4,7 @@ import "./js/jquery.maskedinput.min";
 
 import "./js/preloader";
 import "./js/scrollToId";
+import "./js/data";
 import "./js/checkDevice";
 import "./js/successful";
 import "./js/listDevices";
