@@ -121,18 +121,13 @@
             <div class="wrapper">
                 <div class="price-bg__choose">
                     <img class="price-bg__img" src="src/img/price/notebook.png" alt="notebook">
-                    <form class="price-bg__dependent-lists">
-                        <select name="brand" id="brand__id" class="price-bg__select">
-                            <option value="Standart">Производитель</option>
-                            <option value="Apple">Apple</option>
-                            <option value="Asus">Asus</option>
-                            <option value="Lenovo">Lenovo</option>
-                            <option value="Sony">Sony</option>
-                            <option value="HP">HP</option>
+                    <form class="price-bg__dependent-lists" id="formPhone">
+                        <select name="brand" id="brand__phone" class="price-bg__select">
                         </select>
-                        <select name="model" id="model__id" class="price-bg__select">
+                        <select name="model" id="model__phone" class="price-bg__select">
                         </select>
-                        <h3 id="price-bg__hidden-price" class="price-bg__description-hidden"></h3>
+                        <select name="problem" id="problem__phone" class="price-bg__select">
+                        </select>
                         <div class="price-bg__button">
                             <button class="button price-bg__submit" id="btnSubmitSelectModelGajet" type="button">Узнать стоимость ремонта</button>
                         </div>
@@ -530,16 +525,15 @@
         <div class="modal__wrapper" id="modalBattonClose">
             <div class="modal__title">
                 <h3>Обратный звонок</h3>
-                <p>Оставьте свои данные и наши<br> специалисты сразу с Вами свяжутся</p>
+                <p id="modalDescription">Оставьте свои данные и наши<br> специалисты сразу с Вами свяжутся</p>
             </div>
             <form class="modal__form">
                 <input autocomplete="off" type="text" name="name" placeholder="как к Вам обращаться" required class="modal__input" oninvalid="this.setCustomValidity('Забыли заполнить имя')" oninput="setCustomValidity('')" >
                 <input autocomplete="off" type="tel" name="phone" placeholder="Телефон" class="modal__input" oninvalid="this.setCustomValidity('Забыли заполнить номер')" oninput="setCustomValidity('')">
-                <textarea name="textarea" placeholder="Опишите проблему и тип устройства" class="modal__textarea" rows="4"></textarea>
+                <textarea id="modalTextarea" name="textarea" placeholder="Опишите проблему и тип устройства" class="modal__textarea modal__textarea_hidden" rows="4"></textarea>
                 <input autocomplete="off" type="text" name="device" value="" class="what-is-device">
                 <button type="submit" class="button modal__button" id="modalBatton">Заказать звонок</button>
             </form>
-    
         </div>
     </section>
     
