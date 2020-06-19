@@ -3,8 +3,11 @@
         margin: 30px 20px 10px;
     }
     p {
+        margin: 0 auto;
+        max-width: 290px;
         text-align: center;
         margin-bottom: 20px;
+        word-wrap: break-word;
     }
 }
 .modal__wrapper {
@@ -23,6 +26,12 @@
         color: #48c1bf;
     }
     width: 80%;
+}
+.modal__textarea_hidden {
+    display: none;
+}
+.modal__textarea_active {
+    display: block;
 }
 
 .modal__hidden {

@@ -1,11 +1,17 @@
-const BUTTON = document.querySelector('#headerButton')
+const BUTTON = document.querySelector('#headerButton');
+const MODAL_FORM_CLASS_LIST = document.querySelector('#modalForm').classList;
+const MODAL_TEXTAREA_CLASS_LIST = document.querySelector('#modalTextarea').classList;
 // заводим переменную для удобства. П.С. использовать лучше qverySelector
 
 BUTTON.addEventListener('click', () => { 
     // действие при нажатии на кнопку в шапке сайта, удаляем и добавляем другой класс для модалки, она внизу html
-    document.querySelector('#modalForm').classList.remove('modal__hidden')
-    document.querySelector('#modalForm').classList.add('modal__active')
+    MODAL_FORM_CLASS_LIST.remove('modal__hidden');
+    MODAL_FORM_CLASS_LIST.add('modal__active');
+    MODAL_TEXTAREA_CLASS_LIST.remove('modal__textarea_hidden');
+    MODAL_TEXTAREA_CLASS_LIST.add('modal__textarea_active');
     
+    document.querySelector('#modalDescription').innerHTML = 
+    `Оставьте свои данные и наши специалисты с Вами свяжутся!`;
 })
 
 $(document).mousedown(function (e) { 
@@ -15,7 +21,9 @@ $(document).mousedown(function (e) {
     */
     let clickToOverlate = $('#modalBattonClose')
     if (e.target != clickToOverlate[0]&&clickToOverlate.has(e.target).length === 0) {
-        document.querySelector('#modalForm').classList.remove('modal__active')
-        document.querySelector('#modalForm').classList.add('modal__hidden')
+        MODAL_FORM_CLASS_LIST.remove('modal__active');
+        MODAL_FORM_CLASS_LIST.add('modal__hidden');
+        MODAL_TEXTAREA_CLASS_LIST.remove('modal__textarea_active');
+        MODAL_TEXTAREA_CLASS_LIST.add('modal__textarea_hidden');
     }
 })
