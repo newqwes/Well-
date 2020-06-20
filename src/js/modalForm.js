@@ -12,7 +12,16 @@ BUTTON.addEventListener('click', () => {
     
     document.querySelector('#modalDescription').innerHTML = 
     `Оставьте свои данные и наши специалисты с Вами свяжутся!`;
-})
+});
+// Сделал обработчиком событий через jq так как через addEventListener получалось сделать только один видит а как несколько сделать не знаю
+$('.table-price__button').on('click', () => {
+    MODAL_FORM_CLASS_LIST.remove('modal__hidden');
+    MODAL_FORM_CLASS_LIST.add('modal__active');
+    MODAL_TEXTAREA_CLASS_LIST.remove('modal__textarea_hidden');
+    MODAL_TEXTAREA_CLASS_LIST.add('modal__textarea_active');
+    document.querySelector('#modalDescription').innerHTML = 
+    `Оставьте свои данные и наши специалисты с Вами свяжутся!`;
+});
 
 $(document).mousedown(function (e) { 
     /* https://youtu.be/rIb0OoNWDEs?t=479 взял тут идею через jqvery всё равно подключил эту 
@@ -26,4 +35,4 @@ $(document).mousedown(function (e) {
         MODAL_TEXTAREA_CLASS_LIST.remove('modal__textarea_active');
         MODAL_TEXTAREA_CLASS_LIST.add('modal__textarea_hidden');
     }
-})
+});
