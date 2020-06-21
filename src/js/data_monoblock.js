@@ -1,3 +1,9 @@
+import {
+  mapFirstOptionSelect, 
+  mapProblemOptionSelect,
+  isChangeFirstOptionSelect,
+  dispatchFirstOptionSelect
+} from '../js/funcForSelectOptions';
 // добавил проверку какая страница открыта на каждой форме будет разное стоять
 if (document.querySelector('#formMonoblock')) {
   // Завожу переменные для удобства доступа к тегу с id('xxx');
@@ -28,41 +34,11 @@ const MONOBLOCK_DATA = [
 const PROBLEM_MONOBLOCK_DATA = [
   'Был залит','Треснуло стекло','Не работает микрофон', 'Другая причина'
 ];
-
-/* 
-В BRAND_SELECTOR вписываем новые значения для отображения на странице при помощи innerHTML
-перебираем всё что есть в базе PHONE_DATA при помощи map и этим же методом сразу всё вписываем.
-n тут и есть PHONE_DATA это одно и тоже.
-value=id нужно для того что бы потом по этому значения id смотреть какие есть у нее модели телефонов в следующем нашем методе.
-*/
-BRAND_SELECTOR.innerHTML = MONOBLOCK_DATA
-  .map(n => `<option value="${n.id}">${n.brand_db}</option>`);
-
-/* 
-В PROBLEM_SELECTOR вписываем новые значения для отображения на странице при помощи innerHTML
-перебираем всё что есть в базе PROBLEM_PHONE_DATA при помощи map и этим же методом сразу всё вписываем
-n тут и есть PROBLEM_PHONE_DATA это одно и тоже
-*/
-PROBLEM_SELECTOR.innerHTML = PROBLEM_MONOBLOCK_DATA
-.map(n => `<option>${n}</option>`);
-
-// Вешаем оброботчик событий на то когда выбирут или изменится значение BRAND_SELECTOR
-BRAND_SELECTOR.addEventListener('change', function() {
-MODEL_SELECTOR.innerHTML = MONOBLOCK_DATA
-  .find(n => n.id === this.value)
-  .model_db
-  .map(n => `<option value="${n.id}">${n}</option>`);
-});
-
-// BRAND_SELECTOR сразу говорит, что оно изменино что бы сразу же сработала вот это BRAND_SELECTOR.addEventListener('change'
-// говорит change значит должен сработать верхний метод и при открытии страницы сразу
-//  видно выбор какой то, без него нужно что то сначало изменить
-BRAND_SELECTOR.dispatchEvent(new Event('change'));
-
-
-// заводим переменную для удобства. П.С. использовать лучше qverySelector
+mapFirstOptionSelect(BRAND_SELECTOR, MONOBLOCK_DATA);
+mapProblemOptionSelect(PROBLEM_SELECTOR, PROBLEM_MONOBLOCK_DATA);
+isChangeFirstOptionSelect(BRAND_SELECTOR, MODEL_SELECTOR, MONOBLOCK_DATA);
+dispatchFirstOptionSelect(BRAND_SELECTOR);
 BUTTON_PRICE_BG.addEventListener('click', () => { 
-
   // // действие при нажатии на кнопку в шапке сайта, удаляем и добавляем другой класс
   // HIDDEN_DESCRIPTION.classList.remove('price-bg__description-hidden');
   // HIDDEN_DESCRIPTION.classList.add('price-bg__description-active');

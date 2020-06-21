@@ -1,5 +1,12 @@
+import {
+  mapFirstOptionSelect, 
+  mapProblemOptionSelect,
+  isChangeFirstOptionSelect,
+  dispatchFirstOptionSelect
+} from '../js/funcForSelectOptions';
 // добавил проверку какая страница открыта на каждой форме будет разное стоять
 if (document.querySelector('#formPhone')) {
+
   // Завожу переменные для удобства доступа к тегу с id('xxx');
 const BRAND_SELECTOR = document.querySelector('#brand__phone');
 const MODEL_SELECTOR = document.querySelector('#model__phone');
@@ -7,6 +14,7 @@ const PROBLEM_SELECTOR = document.querySelector('#problem__phone');
 const BUTTON_PRICE_BG = document.querySelector('#btnSubmitSelectModelGajet');
 const MODAL_DESCRIPTION = document.querySelector('#modalDescription');
 const MODAL_FORM = document.querySelector('#modalForm');
+
 // Создаю базу данных со всеми брендами и моделями телефонов
 // в id вписываем следующее по добавлению число 1, 2, 3, ... 20
 const PHONE_DATA = [
@@ -28,41 +36,12 @@ const PHONE_DATA = [
 const PROBLEM_PHONE_DATA = [
   'Был залит','Треснуло стекло','Не работает микрофон', 'Другая причина'
 ];
+mapFirstOptionSelect(BRAND_SELECTOR, PHONE_DATA);
+mapProblemOptionSelect(PROBLEM_SELECTOR, PROBLEM_PHONE_DATA);
+isChangeFirstOptionSelect(BRAND_SELECTOR, MODEL_SELECTOR, PHONE_DATA);
+dispatchFirstOptionSelect(BRAND_SELECTOR);
 
-/* 
-В BRAND_SELECTOR вписываем новые значения для отображения на странице при помощи innerHTML
-перебираем всё что есть в базе PHONE_DATA при помощи map и этим же методом сразу всё вписываем.
-n тут и есть PHONE_DATA это одно и тоже.
-value=id нужно для того что бы потом по этому значения id смотреть какие есть у нее модели телефонов в следующем нашем методе.
-*/
-BRAND_SELECTOR.innerHTML = PHONE_DATA
-  .map(n => `<option value="${n.id}">${n.brand_db}</option>`);
-
-/* 
-В PROBLEM_SELECTOR вписываем новые значения для отображения на странице при помощи innerHTML
-перебираем всё что есть в базе PROBLEM_PHONE_DATA при помощи map и этим же методом сразу всё вписываем
-n тут и есть PROBLEM_PHONE_DATA это одно и тоже
-*/
-PROBLEM_SELECTOR.innerHTML = PROBLEM_PHONE_DATA
-.map(n => `<option>${n}</option>`);
-
-// Вешаем оброботчик событий на то когда выбирут или изменится значение BRAND_SELECTOR
-BRAND_SELECTOR.addEventListener('change', function() {
-MODEL_SELECTOR.innerHTML = PHONE_DATA
-  .find(n => n.id === this.value)
-  .model_db
-  .map(n => `<option value="${n.id}">${n}</option>`);
-});
-
-// BRAND_SELECTOR сразу говорит, что оно изменино что бы сразу же сработала вот это BRAND_SELECTOR.addEventListener('change'
-// говорит change значит должен сработать верхний метод и при открытии страницы сразу
-//  видно выбор какой то, без него нужно что то сначало изменить
-BRAND_SELECTOR.dispatchEvent(new Event('change'));
-
-
-// заводим переменную для удобства. П.С. использовать лучше qverySelector
 BUTTON_PRICE_BG.addEventListener('click', () => { 
-
   // // действие при нажатии на кнопку в шапке сайта, удаляем и добавляем другой класс
   // HIDDEN_DESCRIPTION.classList.remove('price-bg__description-hidden');
   // HIDDEN_DESCRIPTION.classList.add('price-bg__description-active');
