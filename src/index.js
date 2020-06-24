@@ -2,7 +2,7 @@ import "jquery";
 import "popper.js";
 import "./js/jquery.maskedinput.min";
 
-import "./js/preloader";
+// import "./js/preloader";
 import "./js/scrollToId";
 import "./js/funcForSelectOptions";
 import "./js/data_notebook";
