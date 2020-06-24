@@ -80,8 +80,9 @@ position: absolute;
     @extend %font-add;
     @include font (3.4rem, 5.5rem);
     letter-spacing: -.1rem;
-    @include media-iPhone5 {
+    @include media-mobile {
         @include font (3rem, 5.5rem);
+        text-align: center;
     }
 }
 
