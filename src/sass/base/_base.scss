@@ -38,13 +38,13 @@ h2 {
     }
 }
 h3 {
-    color: $color-text;
+    @extend %font-add;
     @include font (3rem, 3rem, 500);
     @include media-mobile {
-        @include font (2.4rem, 2.8rem, bold, normal);
+        @include font (1.8rem, 2.8rem, bold, normal);
     }
     @include media-mobilesmall {
-        @include font (2.4rem, 2.8rem, bold, normal);
+        @include font (1.6rem, 1.8rem, bold, normal);
     }
 }
 

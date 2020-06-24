@@ -5,7 +5,10 @@
     }
 }
 .description__title {
-    margin: 7% 0 5% 0;
+    color: $color-text;
+    @include font(2.4rem, $height:$size, $weight: bold, $style: normal);
+    font-family: 'Ubuntu', Verdana, sans-serif;
+    margin: 5% 0 3% 0;
     text-align: center;
 }
 
