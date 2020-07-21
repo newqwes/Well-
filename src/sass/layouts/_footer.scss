@@ -40,6 +40,9 @@
     @include media-mobile {
         text-align: center;
         margin: 7% 0;
+        button {
+            width: 50%;
+        }
     }
 }
 
