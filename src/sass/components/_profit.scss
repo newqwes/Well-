@@ -1,9 +1,11 @@
-.profit__title1, .profit__title2 {
-    margin-bottom: 2%;
+.profit__title1,
+.profit__title2 {
+    margin-bottom: 1%;
     text-align: center;
 }
 
-.profit__title1, .profit__title-block {
+.profit__title1,
+.profit__title-block {
     color: $color-text;
     letter-spacing: -0.2rem;
 }
@@ -35,16 +37,18 @@
         margin-top: 20px;
     }
 }
-.profit__title-block
- {
-    @include font (2.4rem, 2.6rem);
+.profit__title-block {
+    @include font(2.4rem, 2.6rem);
     margin-bottom: 4%;
 }
 
 .profit__text-block {
-    @include font (1.5rem, 2rem, normal);
+    a {
+        color: $color-text;
+    }
+    @include font(1.5rem, 2rem, normal);
     @include media-mobile {
-        @include font (1.4rem, 1.8rem, normal);
+        @include font(1.4rem, 1.8rem, normal);
         text-align: justify;
     }
 }
@@ -73,11 +77,42 @@
     width: 75px;
 }
 .profit__image-left {
-    margin-bottom: -3px;// не пойму откуда отступ у всего блока до нижнего 3px??? таким образом убрал
+    margin-bottom: -3px; // не пойму откуда отступ у всего блока до нижнего 3px??? таким образом убрал
     @include media-laptop {
         width: 50%;
     }
     @include media-mobile {
         width: 90%;
+    }
+}
+
+.profit__certificates {
+    img {
+        transition: 0.5s ease;
+        opacity: 1;
+        margin-bottom: 10px;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4%;
+
+    @include media-mobile {
+        margin-bottom: 12%;
+    }
+}
+.profit__layout {
+    padding-bottom: 1%;
+}
+.credit__layout {
+    @include media-mobile {
+        .profit__image {
+            transform: rotate(-90deg);
+        }
     }
 }

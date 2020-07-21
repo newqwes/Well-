@@ -91,7 +91,7 @@
             @include font(1.5rem);
         }
         @include media-iPhone5 {
-            @include font(1.4rem);
+            @include font(1.2rem);
             letter-spacing: 0;
         }
     }
@@ -110,7 +110,7 @@
         @include font(1.4rem, 1.6rem, 400);
         letter-spacing: 0.1rem;
         @include media-mobile {
-            @include font(1rem, 1.2rem, 400);
+            @include font(1.2rem, 1.2rem, 400);
         }
 
     }

@@ -1,10 +1,13 @@
 .brand {
     text-align: center;
-    padding: 7% 0 13%;
+    padding: 7% 0 0 0;
     @include media-mobile {
         
     padding: 25% 0 13%;
     }
+}
+.clients {
+    padding-bottom: 13%;
 }
 .brand__title {
 letter-spacing: -0.2rem;
@@ -25,7 +28,7 @@ color: $color-text;
         justify-content: center;
         //border: 1px solid;
         flex: 1 0 18%; /* explanation below */
-        margin: 10px 5px;
+        margin: 15px 5px;
         height: 100px;
         opacity: 0.8;
         
